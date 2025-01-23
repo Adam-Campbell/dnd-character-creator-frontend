@@ -1,0 +1,17 @@
+{
+    "name": "string",
+    "description": "string",
+    "id": "uuid",
+    "level": "number",
+    "range": "number | string",
+    "duration": "string",
+    "concentration": "boolean",
+    "castingTime": "string",
+    "components": {
+        "verbal": "boolean",
+        "somatic": "boolean",
+        "material": "boolean",
+        "materialDescription": "string"
+    },
+    "school": "abjuration | conjuration | divination | enchantment | evocation | illusion | necromancy | transmutation"
+}

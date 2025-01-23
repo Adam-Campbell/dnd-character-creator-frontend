@@ -1,0 +1,54 @@
+{
+    "name": "string",
+    "id": "uuid",
+    "description": "string",
+    "hitDie": "number",
+    "proficiencies": {
+        "armor": ["uuid"],
+        "weapons": ["uuid"],
+        "savingThrows": ["uuid"],
+        "skills": {
+            "choose": "number",
+            "from": ["uuid"]
+        }
+    },
+    "equipment": ["equipmentType"],
+    "spellcasting": {
+        "ability": "uuid | null",
+        "cantrips": {
+            "choose": "number",
+            "from": ["uuid"]
+        },
+        "spells": {
+            "choose": "number",
+            "from": ["uuid"]
+        }
+    },
+    "abilities": {
+        "strength": {
+            "id": "uuid",
+            "value": "8 | 10 | 12 | 13 | 14 | 15"
+        },
+        "dexterity": {
+            "id": "uuid",
+            "value": "8 | 10 | 12 | 13 | 14 | 15"
+        },
+        "constitution": {
+            "id": "uuid",
+            "value": "8 | 10 | 12 | 13 | 14 | 15"
+        },
+        "intelligence": {
+            "id": "uuid",
+            "value": "8 | 10 | 12 | 13 | 14 | 15"
+        },
+        "wisdom": {
+            "id": "uuid",
+            "value": "8 | 10 | 12 | 13 | 14 | 15"
+        },
+        "charisma": {
+            "id": "uuid",
+            "value": "8 | 10 | 12 | 13 | 14 | 15"
+        }
+    },
+    "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+}

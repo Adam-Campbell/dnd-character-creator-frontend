@@ -1,0 +1,16 @@
+{
+    "name": "string",
+    "age": "number",
+    "gender": "string",
+    "race": "raceSchema",
+    "class": "classSchema",
+    "backstory": "string",
+    "alignment": "Lawful Good | Neutral Good | Chaotic Good | Lawful Neutral | True Neutral | Chaotic Neutral | Lawful Evil | Neutral Evil | Chaotic Evil",
+    "personality": {
+        "traits": ["string"],
+        "ideals": ["string"],
+        "bonds": ["string"],
+        "flaws": ["string"]
+    },
+    "appearance": "appearanceSchema"
+}

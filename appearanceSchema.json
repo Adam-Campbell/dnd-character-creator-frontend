@@ -1,0 +1,25 @@
+{
+    "height": "feetInches",
+    "build": "buildType",
+    "skinTone": "string",
+    "hair": {
+        "color": "string",
+        "style": "string",
+        "length": "bald | cropped | short | medium | long | Rapunzel",
+        "type": "straight | wavy | curly",
+        "facialHair": {
+            "style": "full beard | goatee | mustache | sideburns | soul patch | mutton chops | stubble | clean shaven",
+            "length": "short | medium | long"
+        }
+    },
+    "eyes": {
+        "color": "string",
+        "shape": "almond | round | narrow | wide"
+    },
+    "distinguishingFeatures": ["string"],
+    "clothing": {
+        "style": "string",
+        "colors": ["string"],
+        "accessories": ["string"]
+    }
+}

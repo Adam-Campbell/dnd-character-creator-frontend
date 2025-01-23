@@ -1,0 +1,10 @@
+{
+    "name": "string",
+    "id": "uuid",
+    "baseAC": "number",
+    "additiveAC": "number",
+    "dexterityBonus": "none | max2 | full",
+    "type": "light | medium | heavy | shield",
+    "minStrength": "number",
+    "stealthDisadvantage": "boolean"
+}

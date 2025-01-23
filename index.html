@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div data-data="characterGenerator">
+        <template data-if="isLoading">
+            <div>Loading...</div>
+        </template>
+        <template data-if="!isLoading">
+            <div>
+                <div>
+                    <button data-on:click="() => setPage('race')">Race</button>
+                    <button data-on:click="() => setPage('class')">Class</button>
+                    <button data-on:click="() => setPage('abilityPoints')">Ability Points</button>
+                    <button data-on:click="() => setPage('spells')">Spells</button>
+                    <button data-on:click="() => setPage('background')">Background</button>
+                    <button data-on:click="() => setPage('appearance')">Appearance</button>
+                    <button data-on:click="() => setPage('summary')">Summary</button>
+                </div>
+
+                <!-- Markup for race selection -->
+                <template data-if="currentPage === 'race'">
+                    <div>
+                        <label for="race-select">Choose a race:</label>
+                        <select id="race-select" data-model="character.race">
+                            <template data-for="race in staticData.races">
+                                <option data-bind:value="race.id" data-text="race.name" data-bind:selected="character.race === race.id ? true : false">.</option>
+                            </template>
+                        </select>
+                        <template data-if="character.race !== ''">
+                            <div>
+                                <div data-text="`Race: ${chosenRace.name}`"></div>
+                                <div data-text="`Description: ${chosenRace.description}`"></div>
+                                <div data-text="`Speed: ${chosenRace.speed} feet`"></div>
+                                <div data-text="`Size: ${chosenRace.size}`"></div>
+                                <div data-text="chosenRace.darkvision ? 'This race has darkvision' : 'This race does not have darkvision'"></div>
+                                <template data-for="abilityBonus in chosenRace.abilityBonuses.filter(abilityBonus => abilityBonus.bonus !== 0)">
+                                    <span data-text="`+${abilityBonus.bonus} to ${abilityBonus.name}`"></span>
+                                </template>
+                                <template data-if="chosenRace.weaponProficiencies.length > 0">
+                                    <div>
+                                        <div>Weapon Proficiencies:</div>
+                                        <template data-for="proficiency in chosenRace.weaponProficiencies">
+                                            <span data-text="proficiency.name"></span>
+                                        </template>
+                                    </div>
+                                </template>
+                                <template data-if="chosenRace.additionalProperties.length > 0">
+                                    <div>
+                                        <h4>Additional Properties:</h4>
+                                        <template data-for="property in chosenRace.additionalProperties">
+                                            <div>
+                                                <h5 data-text="property.name"></h5>
+                                                <p data-text="property.description"></p>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                        
+                    </div>
+                </template>
+
+                <!-- Markup for class selection -->
+                <template data-if="currentPage === 'class'">
+                    <div>
+                        <label for="class-select">Choose a class:</label>
+                        <select id="class-select" data-model="character.class" data-on:change="resetStateOnClassChange">
+                            <template data-for="cls in staticData.classes">
+                                <option data-bind:value="cls.id" data-text="cls.name" data-bind:selected="character.class === cls.id ? true : false">.</option>
+                            </template>
+                        </select>
+                        <template data-if="character.class !== ''">
+                            <div>
+                                <div data-text="`Class: ${chosenClass.name}`"></div>
+                                <div data-text="`Description: ${chosenClass.description}`"></div>
+                                <div data-text="`Hit Die: d${chosenClass.hitDie}`"></div>
+                                
+                                <h3>Proficiencies</h3>
+                                
+                                <div data-show="chosenClass.proficiencies.armor.length > 0">
+                                    <h5>You are proficient with the following armor types:</h5>
+                                    <template data-for="armorType in chosenClass.proficiencies.armor">
+                                        <span data-text="armorType.name"></span>
+                                    </template>
+                                </div>
+                            
+                                <div data-show="chosenClass.proficiencies.weapons.length > 0">
+                                    <h5>You are proficient with the following weapon types:</h5>
+                                    <template data-for="weapon in chosenClass.proficiencies.weapons">
+                                        <span data-text="weapon.name"></span>
+                                    </template>
+                                </div>
+
+                                <div>
+                                    <h5>You are proficient with the following saving throws:</h5>
+                                    <template data-for="savingThrow in chosenClass.proficiencies.savingThrows">
+                                        <span data-text="savingThrow.name"></span>
+                                    </template>
+                                </div>
+
+                                <div>
+                                    <h5 data-text="`You can choose ${computedNumberOfSkillProficiencies} of the following skills to be proficient in:`"></h5>
+                                    <template data-for="skill in chosenClass.proficiencies.skills.from">
+                                        <div>
+                                            <input data-bind:id="skill.id" type="checkbox" data-bind:checked="character.classSkillChoices.includes(skill.id)" data-on:change="toggleSkillProficiency(skill.id)">
+                                            <label data-bind:for="skill.id" data-text="skill.name"></label>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <h3>Equipment</h3>
+                                <p>You will start with the following equipment:</p>
+                                <template data-for="equipment in chosenClass.equipment">
+                                    <span data-text="`${equipment.item.name} x ${equipment.quantity}`"></span>
+                                </template>
+                            </div>
+                        </template>    
+                    </div>
+                </template>
+
+                <!-- Markup for ability points selection -->
+                <template data-if="currentPage === 'abilityPoints'">
+                    <div>
+                        <div>Summary: todo</div>
+                        <button data-on:click="resetAbilityPoints">Reset to class default</button>
+                        <!-- Strength points select -->
+                        <div>
+                        <label for="strength-points-select">Strength:</label>
+                            <select id="strength-points-select" data-model.number="character.abilityPoints[0].value">
+                                <template data-for="pointOption in computeAbilityPointOptions('0caab33e-f424-4a44-94cd-0c6951e5bdfe')">
+                                    <option 
+                                        data-bind:value="pointOption" 
+                                        data-bind:selected="character.abilityPoints[0].value === pointOption ? true : false" 
+                                        data-text="pointOption">
+                                    </option>
+                                </template>
+                            </select>
+                            <p data-text="getAbilityData('0caab33e-f424-4a44-94cd-0c6951e5bdfe').description"></p>
+                        </div>
+                        <!-- Dexterity points select -->
+                        <div>
+                        <label for="dexterity-points-select">Dexterity:</label>
+                            <select id="dexterity-points-select" 
+                                    data-model.number="character.abilityPoints[1].value">
+                                <template data-for="pointOption in computeAbilityPointOptions('fd107c7f-4536-4b36-bf43-e49d92a3c4c2')">
+                                    <option 
+                                        data-bind:value="pointOption" 
+                                        data-bind:selected="character.abilityPoints[1].value === pointOption ? true : false" 
+                                        data-text="pointOption">
+                                    </option>
+                                </template>
+                            </select>
+                            <p data-text="getAbilityData('fd107c7f-4536-4b36-bf43-e49d92a3c4c2').description"></p>
+                        </div>
+                        <!-- Constitution points select -->
+                        <div>
+                            <label for="constitution-points-select">Constitution:</label>
+                            <select id="constitution-points-select" 
+                                    data-model.number="character.abilityPoints[2].value">
+                                <template data-for="pointOption in computeAbilityPointOptions('b9b14f85-78db-49ea-b07b-b8bdd7a40046')">
+                                    <option 
+                                        data-bind:value="pointOption" 
+                                        data-bind:selected="character.abilityPoints[2].value === pointOption ? true : false" 
+                                        data-text="pointOption">
+                                    </option>
+                                </template>
+                            </select>
+                            <p data-text="getAbilityData('b9b14f85-78db-49ea-b07b-b8bdd7a40046').description"></p>
+                        </div>
+                        <!-- Intelligence points select -->
+                        <div>
+                            <label for="intelligence-points-select">Intelligence:</label>
+                            <select id="intelligence-points-select" 
+                                    data-model.number="character.abilityPoints[3].value">
+                                <template data-for="pointOption in computeAbilityPointOptions('44fbcb3c-d548-4a3c-aa85-4c55e05aabed')">
+                                    <option 
+                                        data-bind:value="pointOption" 
+                                        data-bind:selected="character.abilityPoints[3].value === pointOption ? true : false" 
+                                        data-text="pointOption">
+                                    </option>
+                                </template>
+                            </select>
+                            <p data-text="getAbilityData('44fbcb3c-d548-4a3c-aa85-4c55e05aabed').description"></p>
+                        </div>
+                        <!-- Wisdom points select -->
+                        <div>
+                            <label for="wisdom-points-select">Wisdom:</label>
+                            <select id="wisdom-points-select" 
+                                    data-model.number="character.abilityPoints[4].value">
+                                <template data-for="pointOption in computeAbilityPointOptions('468b3218-340b-4263-9450-dc72e6750f16')">
+                                    <option 
+                                        data-bind:value="pointOption" 
+                                        data-bind:selected="character.abilityPoints[4].value === pointOption ? true : false" 
+                                        data-text="pointOption">
+                                    </option>
+                                </template>
+                            </select>
+                            <p data-text="getAbilityData('468b3218-340b-4263-9450-dc72e6750f16').description"></p>
+                        </div>
+                        <!-- Charisma points select -->
+                        <div>
+                            <label for="charisma-points-select">Charisma:</label>
+                            <select id="charisma-points-select" 
+                                    data-model.number="character.abilityPoints[5].value">
+                                <template data-for="pointOption in computeAbilityPointOptions('b15c2aa9-87e7-408d-89a7-3bbd64d981a9')">
+                                    <option 
+                                        data-bind:value="pointOption" 
+                                        data-bind:selected="character.abilityPoints[5].value === pointOption ? true : false" 
+                                        data-text="pointOption">
+                                    </option>
+                                </template>
+                            </select>
+                            <p data-text="getAbilityData('b15c2aa9-87e7-408d-89a7-3bbd64d981a9').description"></p>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Markup for spells selection -->
+                <template data-if="currentPage === 'spells'">
+                    <div>
+
+                    </div>
+                </template>
+
+
+                <!-- Markup for background selection -->
+                <template data-if="currentPage === 'background'">
+                    <div>
+                        <label for="character-name">Name:</label>
+                        <input id="character-name" type="text" data-model="character.name" placeholder="Enter name"/>
+                        <label for="character-age">Age:</label>
+                        <input id="character-age" type="number" min="0" data-model="character.age" />
+                        <label for="character-gender">Gender</label>
+                        <input id="character-gender" type="text" data-model="character.gender" placeholder="Choose gender" />
+                        <label for="character-alignment">Alignment</label>
+                        <select id="character-alignment" data-model="character.alignment">
+                            <option value="Lawful Good" data-bind:selected="character.alignment === 'Lawful Good' ? true : false">Lawful Good</option>
+                            <option value="Neutral Good" data-bind:selected="character.alignment === 'Neutral Good' ? true : false">Neutral Good</option>
+                            <option value="Chaotic Good" data-bind:selected="character.alignment === 'Chaotic Good' ? true : false">Chaotic Good</option>
+                            <option value="Lawful Neutral" data-bind:selected="character.alignment === 'Lawful Neutral' ? true : false">Lawful Neutral</option>
+                            <option value="True Neutral" data-bind:selected="character.alignment === 'True Neutral' ? true : false">True Neutral</option>
+                            <option value="Chaotic Neutral" data-bind:selected="character.alignment === 'Chaotic Neutral' ? true : false">Chaotic Neutral</option>
+                            <option value="Lawful Evil" data-bind:selected="character.alignment === 'Lawful Evil' ? true : false">Lawful Evil</option>
+                            <option value="Neutral Evil" data-bind:selected="character.alignment === 'Neutral Evil' ? true : false">Neutral Evil</option>
+                            <option value="Chaotic Evil" data-bind:selected="character.alignment === 'Chaotic Evil' ? true : false">Chaotic Evil</option>
+                        </select>
+                        <label for="character-background">Background</label>
+                        <textarea id="character-background" data-model="character.background" placeholder="Enter background"></textarea>
+
+                        <!-- Traits -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-traits">Traits</label>
+                                <input 
+                                    id="character-traits" type="text" data-model="temp"
+                                    data-on:keydown.enter="() => { character.traits.push(temp); clear() }"
+                                />
+                                <button data-on:click="() => { character.traits.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(trait, index) in character.traits">
+                                    <li data-bind:key="trait">
+                                        <span data-text="trait"></span>
+                                        <button data-on:click="() => character.traits.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                        <!-- Ideals -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-ideals">Ideals</label>
+                                <input 
+                                    id="character-ideals" type="text" data-model="temp" 
+                                    data-on:keydown.enter="() => { character.ideals.push(temp); clear() }"    
+                                />
+                                <button data-on:click="() => { character.ideals.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(ideal, index) in character.ideals">
+                                    <li data-bind:key="ideal">
+                                        <span data-text="ideal"></span>
+                                        <button data-on:click="() => character.ideals.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                        <!-- Bonds -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-bonds">Bonds</label>
+                                <input 
+                                    id="character-bonds" type="text" data-model="temp" 
+                                    data-on:keydown.enter="() => { character.bonds.push(temp); clear() }"
+                                />
+                                <button data-on:click="() => { character.bonds.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(bond, index) in character.bonds">
+                                    <li data-bind:key="bond">
+                                        <span data-text="bond"></span>
+                                        <button data-on:click="() => character.bonds.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                        <!-- Flaws -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-flaws">Flaws</label>
+                                <input 
+                                    id="character-flaws" type="text" data-model="temp" 
+                                    data-on:keydown.enter="() => { character.flaws.push(temp); clear() }"    
+                                />
+                                <button data-on:click="() => { character.flaws.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(flaw, index) in character.flaws">
+                                    <li data-bind:key="flaw">
+                                        <span data-text="flaw"></span>
+                                        <button data-on:click="() => character.flaws.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                    </div>
+                </template>
+
+                <!-- Markup for appearance selection -->
+                <template data-if="currentPage === 'appearance'">
+                    <div>
+                        <!-- Height -->
+                        <label for="character-height">Height:</label>
+                        <input id="character-height" type="text" data-model="character.height" />
+                        <!-- Build -->
+                        <label for="character-build">Build:</label>
+                        <input id="character-build" type="text" data-model="character.build" />
+                        <!-- Skin tone -->
+                        <label for="character-skin-tone">Skin Tone:</label>
+                        <input id="character-skin-tone" type="text" data-model="character.skinTone" />
+                        <!-- Hair color -->
+                        <label for="character-hair-color">Hair Color:</label>
+                        <input id="character-hair-color" type="text" data-model="character.hairColor" />
+                        <!-- Hair style -->
+                        <label for="character-hair-style">Hair Style:</label>
+                        <input id="character-hair-style" type="text" data-model="character.hairStyle" />
+                        <!-- Hair length dropdown -->
+                        <label for="character-hair-length">Hair Length:</label>
+                        <select 
+                            data-data="{ options: ['Bald', 'Cropped', 'Short', 'Medium', 'Long', 'Rapunzel'] }" 
+                            data-model="character.hairLength" id="character-hair-length">
+                            <template data-for="option in options">
+                                <option data-bind:value="option" data-bind:selected="character.hairLength === option ? true : false" data-text="option"></option>
+                            </template>
+                        </select>
+                        <!-- Hair type dropdown -->
+                        <label for="character-hair-type">Hair Type:</label>
+                        <select 
+                            data-data="{ options: ['Straight', 'Wavy', 'Curly', 'Snakes'] }" 
+                            data-model="character.hairType" id="character-hair-type">
+                            <template data-for="option in options">
+                                <option data-bind:value="option" data-bind:selected="character.hairType === option ? true : false" data-text="option"></option>
+                            </template>
+                        </select>
+                        <!-- Facial hair style dropdown -->
+                        <label for="character-facial-hair-style">Facial Hair Style:</label>
+                        <select 
+                            data-data="{ options: ['None', 'Stubble', 'Full Beard', 'Goatee', 'Mustache', 'Sideburns', 'Soul Patch', 'Mutton Chops'] }" 
+                            data-model="character.facialHairStyle" id="character-facial-hair-style">
+                            <template data-for="option in options">
+                                <option data-bind:value="option" data-bind:selected="character.facialHairStyle === option ? true : false" data-text="option"></option>
+                            </template>
+                        </select>
+                        <!-- Facial hair length dropdown -->
+                        <label for="character-facial-hair-length">Facial Hair Length:</label>
+                        <select 
+                            data-data="{ options: ['Short', 'Medium', 'Long'] }" 
+                            data-model="character.facialHairLength" id="character-facial-hair-length">
+                            <template data-for="option in options">
+                                <option data-bind:value="option" data-bind:selected="character.facialHairLength === option ? true : false" data-text="option"></option>
+                            </template>
+                        </select>
+                        <!-- Eye Color -->
+                        <label for="character-eye-color">Eye Color:</label>
+                        <input id="character-eye-color" type="text" data-model="character.eyeColor" />
+                        <!-- Eye shape dropdown -->
+                        <label for="character-eye-shape">Eye Shape:</label>
+                        <select 
+                            data-data="{ options: ['Almond', 'Round', 'Narrow', 'Wide'] }" 
+                            data-model="character.eyeShape" id="character-eye-shape">
+                            <template data-for="option in options">
+                                <option data-bind:value="option" data-bind:selected="character.eyeShape === option ? true : false" data-text="option"></option>
+                            </template>
+                        </select>
+
+                        <!-- Distinguishing features -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-distinguishing-features">Distinguishing Features:</label>
+                                <input 
+                                    id="character-distinguishing-features" type="text" data-model="temp" 
+                                    data-on:keydown.enter="() => { character.distinguishingFeatures.push(temp); clear() }"    
+                                />
+                                <button data-on:click="() => { character.distinguishingFeatures.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(feature, index) in character.distinguishingFeatures">
+                                    <li data-bind:key="feature">
+                                        <span data-text="feature"></span>
+                                        <button data-on:click="() => character.distinguishingFeatures.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                        <!-- Clothing style -->
+                        <label for="character-clothing-style">Clothing Style:</label>
+                        <input id="character-clothing-style" type="text" data-model="character.clothingStyle" />
+
+                        <!-- Clothing colors -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-clothing-colors">Clothing Colors:</label>
+                                <input 
+                                    id="character-clothing-colors" type="text" data-model="temp" 
+                                    data-on:keydown.enter="() => { character.clothingColors.push(temp); clear() }"    
+                                />
+                                <button data-on:click="() => { character.clothingColors.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(clothingColor, index) in character.clothingColors">
+                                    <li data-bind:key="clothingColor">
+                                        <span data-text="clothingColor"></span>
+                                        <button data-on:click="() => character.clothingColors.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                        <!-- Clothing accessories -->
+                        <div data-data="{ temp: '', clear() { this.temp = '' } }">
+                            <div>
+                                <label for="character-clothing-accessories">Clothing Accessories:</label>
+                                <input 
+                                    id="character-clothing-accessories" type="text" data-model="temp" 
+                                    data-on:keydown.enter="() => { character.clothingAccessories.push(temp); clear() }"    
+                                />
+                                <button data-on:click="() => { character.clothingAccessories.push(temp); clear() }">Add</button>
+                            </div>
+                            <ul>
+                                <template data-for="(accessory, index) in character.clothingAccessories">
+                                    <li data-bind:key="accessory">
+                                        <span data-text="accessory"></span>
+                                        <button data-on:click="() => character.clothingAccessories.splice(index, 1)">Remove</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+
+                    </div>
+                </template>
+
+                <!-- Markup for summary -->
+                <template data-if="currentPage === 'summary'">
+                    <button data-on:click="handleSubmit">Save</button>
+                </template>
+            </div>
+        </template>
+    </div>
+    
+
+    <!-- My JS must be loaded before Alpine -->
+    <script src="/main.js" type="module"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+</body>
+</html>

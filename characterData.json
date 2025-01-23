@@ -1,0 +1,2242 @@
+{
+    "races": [
+        {
+            "name": "Dwarf",
+            "id": "095914ea-d0a5-41dd-a003-6b5d4558a3ad",
+            "description": "Dwarves are known for their strength, resilience, and craft. They are a stoic and hardy people who live deep in mountain halls and underground fortresses. Dwarves are skilled miners, blacksmiths, and stoneworkers, producing fine weapons, armor, and art from the rock and metals of the earth. Their society values tradition, loyalty, and honor, and they are fiercely protective of their kin and clans. With a deep connection to the earth and a love for fine craftsmanship, dwarves can often be found defending their homes or seeking out new veins of precious metals.",
+            "size": "Medium",
+            "speed": 25,
+            "darkvision": true,
+            "abilityBonuses": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "bonus": 0 
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "bonus": 0 
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "bonus": 2 
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "bonus": 0 
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "bonus": 1 
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "bonus": 0 
+                }
+            ],
+            "weaponProficiencies": [
+                "6c62ade7-afec-4664-b17c-b94cfaa5412a", 
+                "982b9a2a-0cec-4a3d-81a4-c3fcd1100435", 
+                "8327fc7c-43bf-4d21-b262-cf4043c49773", 
+                "1f80d41b-2780-41d9-b014-385ada080724"
+            ],
+            "additionalSkillProficiencies": 0,
+            "additionalProperties": [
+                {
+                    "name": "Dwarven Resilience",
+                    "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+                },
+                {
+                    "name": "Stonecunning",
+                    "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+                },
+                {
+                    "name": "Dwarven Toughness",
+                    "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+                }
+            ]
+        },
+        {
+            "name": "Elf",
+            "id": "576c1e3a-8464-4c1a-bbe7-3dde6813bbd3",
+            "description": "Elves are a graceful and long-lived people, with a deep connection to nature and the arcane. Known for their slender frames, pointed ears, and sharp features, elves are often seen as aloof or distant by other races due to their calm demeanor and centuries of life experience. They have a strong tradition of art, music, and magic, and their societies are often hidden away in forests, ancient cities, or other sacred places.\nElves are divided into different subraces, each with its own distinctive traits, but they all share a deep reverence for nature, balance, and beauty. Some elves are tied to the forests, their homes reflecting their close relationship with the land, while others are scholars of the arcane, mastering magic in secluded towers.\nElves often have a natural affinity for magic, agility, and dexterity, which makes them skilled adventurers, whether they are experts in archery, spellcasting, or stealth.",
+            "size": "Medium",
+            "speed": 30,
+            "darkvision": true,
+            "abilityBonuses": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "bonus": 0 
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "bonus": 2 
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "bonus": 0 
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "bonus": 1 
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "bonus": 0 
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "bonus": 0 
+                }
+            ],
+            "weaponProficiencies": [
+                "b873347c-3ec6-4dbc-b185-2607132972ff", 
+                "2fd75b25-a14a-4c59-bf6e-93787112f5e0", 
+                "281cb46d-d4f9-4f3d-8ee7-7f72ece26912", 
+                "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27"
+            ],
+            "additionalSkillProficiencies": 0,
+            "additionalProperties": [
+                {
+                    "name": "Keen Senses",
+                    "description": "You have proficiency in the Perception skill."
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+                },
+                {
+                    "name": "Trance",
+                    "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+                }
+            ]
+        },
+        {
+            "name": "Halfling",
+            "id": "bf3b0c49-80cc-4258-85a0-3974f656469a",
+            "description": "Halflings are a small and cheerful folk, known for their love of simple pleasures, good food, and strong community bonds. Despite their diminutive size, halflings are surprisingly brave and often show remarkable courage in the face of danger. Their close-knit societies typically live in peaceful rural areas, such as rolling hills or cozy villages, where they can live in harmony with nature and the land.\nHalflings are resourceful and nimble, able to move quickly and quietly, often relying on their wits rather than strength in difficult situations. While they may not have the imposing stature of other races, they are adept at making friends and earning trust, and they often possess a natural charisma that endears them to others.\nWith their deep love for home, family, and companionship, halflings are often seen as a symbol of good-heartedness and resilience, proving that even the smallest among us can leave the biggest impact.",
+            "size": "Small",
+            "speed": 25,
+            "darkvision": false,
+            "abilityBonuses": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "bonus": 0 
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "bonus": 2 
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "bonus": 0 
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "bonus": 0 
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "bonus": 0 
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "bonus": 1 
+                }
+            ],
+            "weaponProficiencies": [],
+            "additionalSkillProficiencies": 0,
+            "additionalProperties": [
+                {
+                    "name": "Lucky",
+                    "description": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+                },
+                {
+                    "name": "Brave",
+                    "description": "You have advantage on saving throws against being frightened."
+                },
+                {
+                    "name": "Halfling Nimbleness",
+                    "description": "You can move through the space of any creature that is of a size larger than yours."
+                },
+                {
+                    "name": "Naturally Stealthy",
+                    "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+                }
+            ]
+        },
+        {
+            "name": "Human",
+            "id": "4725316c-cfc5-44a2-a69f-563088dec352",
+            "description": "Humans are the most adaptable and diverse of the common races, known for their ambition, resilience, and innovation. Unlike elves or dwarves, who are defined by long traditions, humans carve their own paths, often driven by a desire to explore, conquer, and create. Whether they are farmers, warriors, or scholars, humans are found in nearly every corner of the world. Their capacity for growth and change, both individually and as a society, has allowed them to thrive in all kinds of environments. The versatility of humans allows them to excel in many fields, making them one of the most varied and widespread races across the lands.",
+            "size": "Medium",
+            "speed": 30,
+            "darkvision": false,
+            "abilityBonuses": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "bonus": 1 
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "bonus": 1 
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "bonus": 1 
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "bonus": 1 
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "bonus": 1 
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "bonus": 1 
+                }
+            ],
+            "weaponProficiencies": [],
+            "additionalSkillProficiencies": 0,
+            "additionalProperties": []
+        },
+        {
+            "name": "Half-Elf",
+            "id": "ec1f0336-fb41-4ac8-b1f3-2a574ddb1bd5",
+            "description": "Half-elves are the offspring of humans and elves, a rare blend of two worlds. Born from the union of two different cultures, they often find themselves straddling the line between their elven heritage and their human upbringing. While they may inherit the elves' grace and long lifespan, they also share the human spirit for ambition and adaptability.\nGrowing up in a world that may not fully accept them as either human or elf, half-elves are often marked by a sense of duality. They can feel torn between the long-lived, contemplative nature of their elven kin and the fleeting, passionate ways of humans. Yet, this very blend of traits gives half-elves a unique perspective on the world, often making them natural diplomats, negotiators, or wanderers seeking a place where they truly belong.\nHalf-elves tend to be more personable and adaptable than their elven parents, possessing a natural charm and ability to fit into a variety of social situations. While they may face challenges of identity, many half-elves come to value their ability to bridge the gap between cultures, finding strength in their diversity and the ability to thrive in both the world of elves and the world of humans.",
+            "size": "Medium",
+            "speed": 30,
+            "darkvision": true,
+            "abilityBonuses": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "bonus": 1 
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "bonus": 1 
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "bonus": 1 
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "bonus": 1 
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "bonus": 1 
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "bonus": 2 
+                }
+            ],
+            "weaponProficiencies": [],
+            "additionalSkillProficiencies": 1,
+            "additionalProperties": [
+                {
+                    "name": "Fey Ancestry",
+                    "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+                }
+            ]
+        },
+        {
+            "name": "Tiefling",
+            "id": "8b5c75dd-3d4f-41b4-a7c2-ec516f02256e",
+            "description": "Tieflings are individuals marked by a fiendish heritage, their bloodline touched by infernal powers. With horns curling from their foreheads, tails swaying behind them, and eyes that glow like embers, tieflings often bear physical signs that set them apart from the rest of society. Their appearance alone often makes them objects of fear and suspicion, even though many tieflings are kind-hearted and noble.\nThe infernal influence that runs through their veins often manifests in a natural aptitude for magic, particularly powers that deal with fire, darkness, and persuasion. However, their heritage is a double-edged sword. Though they may possess incredible strength of will and resilience, tieflings are often forced to contend with prejudice, misunderstanding, and distrust, whether from those who fear their fiendish origins or from those who seek to exploit their powers.\nTieflings tend to embrace their individuality and pride in the face of adversity. Some might feel an internal struggle with their darker heritage, while others fully embrace it, knowing that their origins do not define who they are. Whether as wandering adventurers or as leaders who rise above the judgment of others, tieflings make their mark on the world with their passion, resourcefulness, and fierce determination.",
+            "size": "Medium",
+            "speed": 30,
+            "darkvision": true,
+            "abilityBonuses": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "bonus": 0 
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "bonus": 0 
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "bonus": 0
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "bonus": 1 
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "bonus": 0 
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "bonus": 2 
+                }
+            ],
+            "weaponProficiencies": [],
+            "additionalSkillProficiencies": 0,
+            "additionalProperties": [
+                {
+                    "name": "Hellish Resistance",
+                    "description": "You have resistance to fire damage."
+                },
+                {
+                    "name": "Infernal Heritage",
+                    "description": "You have advantage on saving throws against being charmed or frightened."
+                }
+            ]
+        }
+    ],
+    "classes": [
+        {
+            "name": "Barbarian",
+            "id": "44f84547-8935-4ab4-bd29-fb60d0000d04",
+            "description": "Unleashing raw, primal fury in battle, barbarians are ferocious warriors who channel their rage into overwhelming strength and resilience.",
+            "hitDie": 12,
+            "proficiencies": {
+                "armor": [
+                    "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
+                    "9b541bd7-1f40-4cd3-9b14-6498681920d7",
+                    "46abebad-ecc3-42e2-90f8-078b73a2d8df"
+                ],
+                "weapons": [
+                    "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "8327fc7c-43bf-4d21-b262-cf4043c49773",
+                    "66119965-f10b-4884-bfcf-a6181335f716",
+                    "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+                    "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c",
+                    "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27", 
+                    "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+                    "6c62ade7-afec-4664-b17c-b94cfaa5412a",
+                    "6dc22098-2109-4736-ac46-3e7834f3e4f6",
+                    "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+                    "2fd75b25-a14a-4c59-bf6e-93787112f5e0",
+                    "b873347c-3ec6-4dbc-b185-2607132972ff",
+                    "1f80d41b-2780-41d9-b014-385ada080724", 
+                    "8e3965b3-4c03-48b7-94c3-5a29a17e7cc2",
+                    "281cb46d-d4f9-4f3d-8ee7-7f72ece26912"
+                ],
+                "savingThrows": [
+                    "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "b9b14f85-78db-49ea-b07b-b8bdd7a40046"
+                ],
+                "skills": {
+                    "choose": 2,
+                    "from": [
+                        "0cf988cb-ed38-40f8-948f-91b679cf502c",
+                        "f0282ac7-16a8-42c4-a50f-4336db5c0162",
+                        "57b45a74-aacb-4ea7-9d5d-8219b8f15851",
+                        "571128ca-be8c-41ac-a90a-41b55c90746f",
+                        "fc38c64c-bc06-4fd1-b38e-3912d517635d",
+                        "46323de2-37a8-4b4e-9b63-63bec924f21c"
+                    ]
+                }
+            },
+            "equipment": [
+                {
+                    "id": "6dc22098-2109-4736-ac46-3e7834f3e4f6",
+                    "quantity": 1
+                },
+                {
+                    "id":  "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "quantity": 2
+                },
+                {
+                    "id": "578304a0-bae5-479c-9f79-7046b8fb3c58",
+                    "quantity": 1
+                },
+                {
+                    "id": "66119965-f10b-4884-bfcf-a6181335f716",
+                    "quantity": 4
+                }
+            ],
+            "spellcasting": {
+                "ability": null,
+                "cantrips": {
+                    "choose": 0,
+                    "from": []
+                },
+                "spells": {
+                    "choose": 0,
+                    "from": []
+                }
+            },
+            "abilities": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "value": 15
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "value": 13
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "value": 14
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "value": 8
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "value": 12
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "value": 10
+                }
+            ],
+            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+        },
+        {
+            "name": "Bard",
+            "id": "ea6fbdc2-82c7-44d7-b065-bd70e136ccc7",
+            "description": "Weaving magic through music, poetry, and art, bards are versatile performers who inspire allies, confound foes, and bring charm to every encounter.",
+            "hitDie": 8,
+            "proficiencies": {
+                "armor": [
+                    "b19e1ad4-b0d1-47c0-9641-72d51d1ce907"
+                ],
+                "weapons": [
+                    "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "8327fc7c-43bf-4d21-b262-cf4043c49773",
+                    "66119965-f10b-4884-bfcf-a6181335f716",
+                    "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+                    "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c",
+                    "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27", 
+                    "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+                    "8e3965b3-4c03-48b7-94c3-5a29a17e7cc2",
+                    "b873347c-3ec6-4dbc-b185-2607132972ff",
+                    "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+                    "2fd75b25-a14a-4c59-bf6e-93787112f5e0"
+                ],
+                "savingThrows": [
+                    "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "b15c2aa9-87e7-408d-89a7-3bbd64d981a9"
+                ],
+                "skills": {
+                    "choose": 3,
+                    "from": [
+                        "f0282ac7-16a8-42c4-a50f-4336db5c0162",
+                        "26cd5299-99a3-42ad-bf86-73c453104a08",
+                        "c0570ecd-b0f1-4cdf-b71a-a558cdef866d",
+                        "032f782b-2b99-4da4-8fcd-8dae8a207d7d",
+                        "2d27709a-bc52-422e-9268-0f9f3967c5f9",
+                        "d8eb6094-2655-4fdd-bfb4-ed01163c4cf5",
+                        "f0e83eb0-d3a7-40ee-b1a5-ea146b4dd094",
+                        "571128ca-be8c-41ac-a90a-41b55c90746f",
+                        "540937ab-6c67-4c5f-9102-c8b180729a8e",
+                        "0cf988cb-ed38-40f8-948f-91b679cf502c",
+                        "5fec3a3b-806d-47c5-9101-2fb77832ec18",
+                        "a9ed3d93-d90a-4cbe-946c-eba444b1c8c4",
+                        "fc38c64c-bc06-4fd1-b38e-3912d517635d",
+                        "46323de2-37a8-4b4e-9b63-63bec924f21c",
+                        "78f8567e-8c82-4f41-ae7e-112a299dd0aa",
+                        "57b45a74-aacb-4ea7-9d5d-8219b8f15851",
+                        "3bbcebbe-8e83-49af-97e0-66648d020ccb",
+                        "affa7db3-34db-4f19-aca3-afae012f47b4"
+                    ]
+                }
+            },
+            "equipment": [
+                {
+                    "id": "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+                    "quantity": 1
+                },
+                {
+                    "id": "d5bd0a43-7dfe-493e-9741-653f792caa7e",
+                    "quantity": 1
+                },
+                {
+                    "id": "a000e492-4418-416d-849b-09d64c200eaa",
+                    "quantity": 1
+                },
+                {
+                    "id": "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "quantity": 1
+                },
+                {
+                    "id": "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
+                    "quantity": 1
+                }
+            ],
+            "spellcasting": {
+                "ability": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                "cantrips": {
+                    "choose": 2,
+                    "from": [
+                        "800ee7cd-fd9e-4145-b01f-d51577e26e02", 
+                        "1954b842-4004-4aa7-84bd-e8eb30fe1744", 
+                        "8a2a3ffd-c383-460a-8db7-ea0abe72c419", 
+                        "87b8c250-f2cc-4920-9b43-0046a8b34e55", 
+                        "66e4a647-cf9f-442a-9c31-db2ae0483cc4", 
+                        "53fc449d-2488-418e-b2c9-6dd3162f333f", 
+                        "227a3f45-39c1-441e-9185-aca770d55827", 
+                        "93c2d7d6-6f3b-4d01-a694-f3ebe804fdc7", 
+                        "9432fedb-4c67-4b63-8778-ef9c985d0729"
+                    ]
+                },
+                "spells": {
+                    "choose": 4,
+                    "from": [
+                        "ad6c7f3a-6770-497d-91bd-ae164f7cca4b", 
+                        "52b6c000-7810-4857-988b-81db81185ede", 
+                        "07e69325-723f-45e1-a632-8a747d835728", 
+                        "e5c90b9e-9590-4050-9dc7-40f14e2c6ae1", 
+                        "f3f8ead5-3969-41a6-a863-09f18811dde1", 
+                        "49868ff5-11a5-4d9f-b70d-adca9fec1f34", 
+                        "fb37362f-1985-474e-a399-7401b80ab5d7", 
+                        "8aa90fa7-7039-4e96-adbf-27fde78da110", 
+                        "c3ed0baf-992e-40af-a969-071e8e641da7", 
+                        "ae73cd41-1223-4930-afa4-fbe32556281c", 
+                        "515a704f-0774-4cd3-9f75-fc3ef66cefba", 
+                        "a5e9330a-f9d0-4a3c-9ace-a6c7a080be42", 
+                        "144f983f-0681-4953-b75d-705046f0dcd4", 
+                        "015f97f3-e899-4272-a25f-998eb7a865fb"
+                    ]
+                }
+            },
+            "abilities": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "value": 8
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "value": 14
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "value": 13
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "value": 12
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "value": 10
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "value": 15
+                }
+            ],
+            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+        },
+        {
+            "name": "Cleric",
+            "id": "17d2bd00-57b7-4756-b14e-43bf1f102585",
+            "description": "Guided by divine power, clerics are holy warriors and healers, capable of both calling miracles and smiting foes in the name of their deity.",
+            "hitDie": 8,
+            "proficiencies": {
+                "armor": [
+                    "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
+                    "9b541bd7-1f40-4cd3-9b14-6498681920d7",
+                    "46abebad-ecc3-42e2-90f8-078b73a2d8df"
+                ],
+                "weapons": [
+                    "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "8327fc7c-43bf-4d21-b262-cf4043c49773",
+                    "66119965-f10b-4884-bfcf-a6181335f716",
+                    "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+                    "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c",
+                    "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27", 
+                    "24f750b2-1b5d-4b4b-b47a-de380732f3b2"
+                ],
+                "savingThrows": [
+                    "468b3218-340b-4263-9450-dc72e6750f16",
+                    "b15c2aa9-87e7-408d-89a7-3bbd64d981a9"
+                ],
+                "skills": {
+                    "choose": 2,
+                    "from": [
+                        "d8eb6094-2655-4fdd-bfb4-ed01163c4cf5",
+                        "5fec3a3b-806d-47c5-9101-2fb77832ec18",
+                        "a9ed3d93-d90a-4cbe-946c-eba444b1c8c4",
+                        "affa7db3-34db-4f19-aca3-afae012f47b4",
+                        "540937ab-6c67-4c5f-9102-c8b180729a8e"
+                    ]
+                }
+            },
+            "equipment": [
+                {
+                    "id": "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+                    "quantity": 1
+                },
+                {
+                    "id": "9b541bd7-1f40-4cd3-9b14-6498681920d7",
+                    "quantity": 1
+                },
+                {
+                    "id": "c1f86cf1-b62e-4fea-84b7-1c5900118b5e",
+                    "quantity": 1
+                },
+                {
+                    "id": "46abebad-ecc3-42e2-90f8-078b73a2d8df",
+                    "quantity": 1
+                }
+            ],
+            "spellcasting": {
+                "ability": "468b3218-340b-4263-9450-dc72e6750f16",
+                "cantrips": {
+                    "choose": 3,
+                    "from": [
+                        "a36bffb7-2ee4-4721-990a-66403a35dcec", 
+                        "1954b842-4004-4aa7-84bd-e8eb30fe1744", 
+                        "87b8c250-f2cc-4920-9b43-0046a8b34e55", 
+                        "d535e9f5-9ae8-46d0-8b55-ab85b9689729", 
+                        "a9db1992-544e-4fe9-8306-704bf0bea062", 
+                        "27a4aef8-024e-496d-bc0b-17cd6aeee017", 
+                        "0f136266-9ead-405c-8730-0c0f42b74dc9"
+                    ]
+                },
+                "spells": {
+                    "choose": 3,
+                    "from": [
+                        "ad6c7f3a-6770-497d-91bd-ae164f7cca4b", 
+                        "02164a46-bc18-4dde-99e9-cfd4d4ca44ac", 
+                        "eedc57b0-5c91-4254-a8d2-d93cb54b2ad8", 
+                        "07e69325-723f-45e1-a632-8a747d835728", 
+                        "62634aad-3754-4ea3-be95-2708ebdab3a7", 
+                        "e5c90b9e-9590-4050-9dc7-40f14e2c6ae1", 
+                        "8998d160-431f-4165-ab80-4bf1e9c8d424", 
+                        "8aa90fa7-7039-4e96-adbf-27fde78da110", 
+                        "53541979-b39b-46c7-82f5-125820bab4a4", 
+                        "52c3c347-34c7-4b2d-95be-b6fa9f4f940b", 
+                        "5fd6c4e2-e7cd-4f1c-8712-e5e2db74e29d", 
+                        "4e48fdcd-c505-4d2e-9798-49fe75c16aee"
+                    ]
+                }
+            },
+            "abilities": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "value": 13
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "value": 10
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "value": 14
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "value": 8
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "value": 15
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "value": 12
+                }
+            ],
+            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+        },
+        {
+            "name": "Fighter",
+            "id": "e72b02b5-a7d0-4b1b-860f-7c965ea5e18c",
+            "description": "Masters of combat and strategy, fighters are adaptable warriors, excelling with weapons, armour, and tactics to dominate the battlefield.",
+            "hitDie": 10,
+            "proficiencies": {
+                "armor": [
+                    "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
+                    "9b541bd7-1f40-4cd3-9b14-6498681920d7",
+                    "7aadb6ca-a9f7-4319-920a-db7891f37d65",
+                    "46abebad-ecc3-42e2-90f8-078b73a2d8df"
+                ],
+                "weapons": [
+                    "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "8327fc7c-43bf-4d21-b262-cf4043c49773",
+                    "66119965-f10b-4884-bfcf-a6181335f716",
+                    "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+                    "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c",
+                    "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27", 
+                    "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+                    "6c62ade7-afec-4664-b17c-b94cfaa5412a",
+                    "6dc22098-2109-4736-ac46-3e7834f3e4f6",
+                    "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+                    "2fd75b25-a14a-4c59-bf6e-93787112f5e0",
+                    "b873347c-3ec6-4dbc-b185-2607132972ff",
+                    "1f80d41b-2780-41d9-b014-385ada080724", 
+                    "8e3965b3-4c03-48b7-94c3-5a29a17e7cc2",
+                    "281cb46d-d4f9-4f3d-8ee7-7f72ece26912"
+                ],
+                "savingThrows": [
+                    "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "b9b14f85-78db-49ea-b07b-b8bdd7a40046"
+                ],
+                "skills": {
+                    "choose": 2,
+                    "from": [
+                        "26cd5299-99a3-42ad-bf86-73c453104a08",
+                        "0cf988cb-ed38-40f8-948f-91b679cf502c",
+                        "f0282ac7-16a8-42c4-a50f-4336db5c0162",
+                        "d8eb6094-2655-4fdd-bfb4-ed01163c4cf5",
+                        "5fec3a3b-806d-47c5-9101-2fb77832ec18",
+                        "57b45a74-aacb-4ea7-9d5d-8219b8f15851",
+                        "fc38c64c-bc06-4fd1-b38e-3912d517635d",
+                        "46323de2-37a8-4b4e-9b63-63bec924f21c"
+                    ]
+                }
+            },
+            "equipment": [
+                {
+                    "id": "7aadb6ca-a9f7-4319-920a-db7891f37d65",
+                    "quantity": 1
+                },
+                {
+                    "id": "b873347c-3ec6-4dbc-b185-2607132972ff",
+                    "quantity": 1
+                },
+                {
+                    "id": "46abebad-ecc3-42e2-90f8-078b73a2d8df",
+                    "quantity": 1
+                },
+                {
+                    "id": "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "quantity": 2
+                },
+                {
+                    "id": "603528ae-af92-4f4e-b570-fa3cd96aa2d9",
+                    "quantity": 1
+                }
+            ],
+            "spellcasting": {
+                "ability": null,
+                "cantrips": {
+                    "choose": 0,
+                    "from": []
+                },
+                "spells": {
+                    "choose": 0,
+                    "from": []
+                }
+            },
+            "abilities": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "value": 15
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "value": 13
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "value": 14
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "value": 10
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "value": 12
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "value": 8
+                }
+            ],
+            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+        },
+        {
+            "name": "Rogue",
+            "id": "32ea43f0-8f6f-4ce4-829c-f58955a758d1",
+            "description": "Skilled in stealth, cunning, and precision, rogues are resourceful adventurers who thrive in the shadows and strike when least expected.",
+            "hitDie": 8,
+            "proficiencies": {
+                "armor": [
+                    "b19e1ad4-b0d1-47c0-9641-72d51d1ce907"
+                ],
+                "weapons": [
+                    "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+                    "8327fc7c-43bf-4d21-b262-cf4043c49773",
+                    "66119965-f10b-4884-bfcf-a6181335f716",
+                    "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+                    "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c",
+                    "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27", 
+                    "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+                    "8e3965b3-4c03-48b7-94c3-5a29a17e7cc2",
+                    "b873347c-3ec6-4dbc-b185-2607132972ff",
+                    "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+                    "2fd75b25-a14a-4c59-bf6e-93787112f5e0"
+                ],
+                "savingThrows": [
+                    "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "44fbcb3c-d548-4a3c-aa85-4c55e05aabed"
+                ],
+                "skills": {
+                    "choose": 4,
+                    "from": [
+                        "26cd5299-99a3-42ad-bf86-73c453104a08",
+                        "f0282ac7-16a8-42c4-a50f-4336db5c0162",
+                        "78f8567e-8c82-4f41-ae7e-112a299dd0aa",
+                        "5fec3a3b-806d-47c5-9101-2fb77832ec18",
+                        "57b45a74-aacb-4ea7-9d5d-8219b8f15851",
+                        "f0e83eb0-d3a7-40ee-b1a5-ea146b4dd094",
+                        "fc38c64c-bc06-4fd1-b38e-3912d517635d",
+                        "3bbcebbe-8e83-49af-97e0-66648d020ccb",
+                        "affa7db3-34db-4f19-aca3-afae012f47b4",
+                        "c0570ecd-b0f1-4cdf-b71a-a558cdef866d",
+                        "032f782b-2b99-4da4-8fcd-8dae8a207d7d"
+                    ]
+                }
+            },
+            "equipment": [
+                {
+                    "id": "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+                    "quantity": 1
+                },
+                {
+                    "id": "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27",
+                    "quantity": 1
+                },
+                {
+                    "id": "a7e46a36-8e03-4bf1-bb01-7239b7eecb0d",
+                    "quantity": 1
+                },
+                {
+                    "id": "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
+                    "quantity": 1
+                },
+                {
+                    "id": "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "quantity": 2
+                }
+            ],
+            "spellcasting": {
+                "ability": null,
+                "cantrips": {
+                    "choose": 0,
+                    "from": []
+                },
+                "spells": {
+                    "choose": 0,
+                    "from": []
+                }
+            },
+            "abilities": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "value": 8
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "value": 15
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "value": 13
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "value": 14
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "value": 10
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "value": 12
+                }
+            ],
+            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+        },
+        {
+            "name": "Wizard",
+            "id": "ef560074-395d-4e42-b5ac-5ad9d3342271",
+            "description": "Dedicated scholars of the arcane, wizards wield immense magical power, bending reality through study and mastery of ancient spells.",
+            "hitDie": 6,
+            "proficiencies": {
+                "armor": [],
+                "weapons": [
+                    "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+                    "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+                    "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c"
+                ],
+                "savingThrows": [
+                    "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "468b3218-340b-4263-9450-dc72e6750f16"
+                ],
+                "skills": {
+                    "choose": 2,
+                    "from": [
+                        "2d27709a-bc52-422e-9268-0f9f3967c5f9",
+                        "d8eb6094-2655-4fdd-bfb4-ed01163c4cf5",
+                        "5fec3a3b-806d-47c5-9101-2fb77832ec18",
+                        "f0e83eb0-d3a7-40ee-b1a5-ea146b4dd094",
+                        "a9ed3d93-d90a-4cbe-946c-eba444b1c8c4",
+                        "540937ab-6c67-4c5f-9102-c8b180729a8e"
+                    ]
+                }
+            },
+            "equipment": [
+                {
+                    "id": "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+                    "quantity": 1
+                },
+                {
+                    "id": "d7d6b248-c769-4c3f-933e-56ce4256a306",
+                    "quantity": 1
+                },
+                {
+                    "id": "9d5290a9-1110-48b8-9e10-644cb3b00e2e",
+                    "quantity": 1
+                }
+            ],
+            "spellcasting": {
+                "ability": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                "cantrips": {
+                    "choose": 3,
+                    "from": [
+                        "d8ee8332-421a-441f-86a3-5ae00de502c7", 
+                        "02d5bb58-2dcf-4343-a67c-e615e8c883d2", 
+                        "800ee7cd-fd9e-4145-b01f-d51577e26e02", 
+                        "b692b950-1530-4112-81a3-710f723d9612", 
+                        "1954b842-4004-4aa7-84bd-e8eb30fe1744", 
+                        "8a2a3ffd-c383-460a-8db7-ea0abe72c419", 
+                        "87b8c250-f2cc-4920-9b43-0046a8b34e55", 
+                        "66e4a647-cf9f-442a-9c31-db2ae0483cc4", 
+                        "53fc449d-2488-418e-b2c9-6dd3162f333f", 
+                        "6ed84f5f-d26a-426e-a1e3-99ac71dcfb47", 
+                        "227a3f45-39c1-441e-9185-aca770d55827", 
+                        "981bba4e-734c-49fb-8570-0e2c092d8f58", 
+                        "ff717dc4-1395-4d5d-8e6a-6d900bfd0eb2", 
+                        "93c2d7d6-6f3b-4d01-a694-f3ebe804fdc7"
+                    ]
+                },
+                "spells": {
+                    "choose": 6,
+                    "from": [
+                        "61958401-59a0-4bde-bd12-d9ca419ae4db", 
+                        "52b6c000-7810-4857-988b-81db81185ede", 
+                        "ba948243-4881-44de-ad9a-e0f55044159f", 
+                        "e5c90b9e-9590-4050-9dc7-40f14e2c6ae1", 
+                        "f3f8ead5-3969-41a6-a863-09f18811dde1", 
+                        "fb37362f-1985-474e-a399-7401b80ab5d7", 
+                        "79d4e2a3-96c2-499f-b0dd-154fadb132cf", 
+                        "02504055-b348-42af-aa50-757ccb4200da", 
+                        "ae73cd41-1223-4930-afa4-fbe32556281c", 
+                        "34096cb5-f267-4ccf-8356-7ee396eb2fec", 
+                        "8d25c369-8660-47ba-a67d-c54a1e56ff2f", 
+                        "7dab1502-53f2-4020-9a31-cb83d36582cd", 
+                        "52c3c347-34c7-4b2d-95be-b6fa9f4f940b", 
+                        "ca6d6e08-ff2e-41d6-816f-d55f6ef450f5", 
+                        "515a704f-0774-4cd3-9f75-fc3ef66cefba", 
+                        "a5e9330a-f9d0-4a3c-9ace-a6c7a080be42", 
+                        "015f97f3-e899-4272-a25f-998eb7a865fb"
+                    ]
+                }
+            },
+            "abilities": [
+                {
+                    "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+                    "value": 8
+                },
+                {
+                    "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+                    "value": 13
+                },
+                {
+                    "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046",
+                    "value": 14
+                },
+                {
+                    "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+                    "value": 15
+                },
+                {
+                    "id": "468b3218-340b-4263-9450-dc72e6750f16",
+                    "value": 12
+                },
+                {
+                    "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+                    "value": 10
+                }
+            ],
+            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+        }
+    ],
+    "cantrips": [
+        { 
+            "name": "Acid Splash", 
+            "id": "d8ee8332-421a-441f-86a3-5ae00de502c7", 
+            "description": "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.\nThis spell’s damage increases by 1d6 when you  reach 5th level (2d6), 11th level (3d6), and 17th  level (4d6).",
+            "level": 0,
+            "range": 60,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "conjuration"
+        },
+        { 
+            "name": "Chill Touch", 
+            "id": "02d5bb58-2dcf-4343-a67c-e615e8c883d2", 
+            "description": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage,  and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th  level (4d8).",
+            "level": 0,
+            "range": 120,
+            "duration": "1 round",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "necromancy"
+        },
+        { 
+            "name": "Dancing Lights", 
+            "id": "800ee7cd-fd9e-4145-b01f-d51577e26e02", 
+            "description": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the  spell’s range.",
+            "level": 0,
+            "range": 120,
+            "duration": "Up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A bit of phosphorus or wychwood, or a glowworm"
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Fire Bolt", 
+            "id": "b692b950-1530-4112-81a3-710f723d9612", 
+            "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target.  On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10),  level (3d10), and 17th level (4d10).",
+            "level": 0,
+            "range": 120,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Guidance", 
+            "id": "a36bffb7-2ee4-4721-990a-66403a35dcec", 
+            "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+            "level": 0,
+            "range": "touch",
+            "duration": "Up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "divination"
+        },
+        { 
+            "name": "Light", 
+            "id": "1954b842-4004-4aa7-84bd-e8eb30fe1744", 
+            "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action. If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+            "level": 0,
+            "range": "touch",
+            "duration": "1 hour",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": true,
+                "materialDescription": "A firefly or phosphorescent moss"
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Mage Hand", 
+            "id": "8a2a3ffd-c383-460a-8db7-ea0abe72c419", 
+            "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can’t attack, activate magic items, or carry more than 10 pounds.",
+            "level": 0,
+            "range": 30,
+            "duration": "1 minute",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "conjuration"
+        },
+        { 
+            "name": "Mending", 
+            "id": "87b8c250-f2cc-4920-9b43-0046a8b34e55", 
+            "description": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.",
+            "level": 0,
+            "range": "touch",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 minute",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "Two lodestones"
+            },
+            "school": "transmutation"
+        },
+        { 
+            "name": "Message", 
+            "id": "66e4a647-cf9f-442a-9c31-db2ae0483cc4", 
+            "description": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings.",
+            "level": 0,
+            "range": 120,
+            "duration": "1 round",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A short piece of copper wire"
+            },
+            "school": "transmutation"
+        },
+        { 
+            "name": "Minor Illusion", 
+            "id": "53fc449d-2488-418e-b2c9-6dd3162f333f", 
+            "description": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else’s voice, a lion’s roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends. If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can’t create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it. If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
+            "level": 0,
+            "range": 30,
+            "duration": "1 minute",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": false,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A bit of fleece"
+            },
+            "school": "illusion"
+        },
+        { 
+            "name": "Poison Spray", 
+            "id": "6ed84f5f-d26a-426e-a1e3-99ac71dcfb47", 
+            "description": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+            "level": 0,
+            "range": 10,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "conjuration"
+        },
+        { 
+            "name": "Prestidigitation", 
+            "id": "227a3f45-39c1-441e-9185-aca770d55827", 
+            "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\nYou create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\nYou instantaneously light or snuff out a candle, a torch, or a small campfire.\nYou instantaneously clean or soil an object no larger than 1 cubic foot.\nYou chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\nYou make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\nYou create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn. \nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+            "level": 0,
+            "range": 10,
+            "duration": "Up to 1 hour",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "transmutation"
+        },
+        { 
+            "name": "Ray of Frost", 
+            "id": "981bba4e-734c-49fb-8570-0e2c092d8f58", 
+            "description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "level": 0,
+            "range": 60,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Resistance", 
+            "id": "d535e9f5-9ae8-46d0-8b55-ab85b9689729", 
+            "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.",
+            "level": 0,
+            "range": "touch",
+            "duration": "Up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A miniature cloak"
+            },
+            "school": "abjuration"
+        },
+        { 
+            "name": "Sacred Flame", 
+            "id": "a9db1992-544e-4fe9-8306-704bf0bea062", 
+            "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "level": 0,
+            "range": 60,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Shocking Grasp", 
+            "id": "ff717dc4-1395-4d5d-8e6a-6d900bfd0eb2", 
+            "description": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "level": 0,
+            "range": "touch",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Spare the Dying", 
+            "id": "27a4aef8-024e-496d-bc0b-17cd6aeee017", 
+            "description": "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.",
+            "level": 0,
+            "range": "touch",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "necromancy"
+        },
+        { 
+            "name": "Thaumaturgy", 
+            "id": "0f136266-9ead-405c-8730-0c0f42b74dc9", 
+            "description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:\nYour voice booms up to three times as loud as normal for 1 minute.\nYou cause flames to flicker, brighten, dim, or change color for 1 minute.\nYou cause harmless tremors in the ground for 1 minute.\nYou create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\nYou instantaneously cause an unlocked door or window to fly open or slam shut.\nYou alter the appearance of your eyes for 1 minute.\n\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+            "level": 0,
+            "range": 30,
+            "duration": "Up to 1 minute",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "transmutation"
+        },
+        { 
+            "name": "True Strike", 
+            "id": "93c2d7d6-6f3b-4d01-a694-f3ebe804fdc7", 
+            "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended.",
+            "level": 0,
+            "range": 30,
+            "duration": "Up to 1 round",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": false,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "divination"
+        },
+        { 
+            "name": "Vicious Mockery", 
+            "id": "9432fedb-4c67-4b63-8778-ef9c985d0729", 
+            "description": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+            "level": 0,
+            "range": 60,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "enchantment"
+        }  
+    ],
+    "spells": [
+        { 
+            "name": "Bane", 
+            "id": "ad6c7f3a-6770-497d-91bd-ae164f7cca4b", 
+            "description": "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.\nWhen you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "level": 1,
+            "range": 30,
+            "duration": "Up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A drop of blood"
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Bless", 
+            "id": "02164a46-bc18-4dde-99e9-cfd4d4ca44ac", 
+            "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.\nWhen you cast this spell using a spell slot of 2nd level or higher, you can target one  additional creature for each slot level above 1st.",
+            "level": 1,
+            "range": 30,
+            "duration": "Up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A sprinkling of holy water"
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Burning Hands", 
+            "id": "61958401-59a0-4bde-bd12-d9ca419ae4db", 
+            "description": "As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+            "level": 1,
+            "range": "self, 15-foot cone",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Charm Person", 
+            "id": "52b6c000-7810-4857-988b-81db81185ede", 
+            "description": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.\nWhen you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+            "level": 1,
+            "range": 30,
+            "duration": "1 hour",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Color Spray", 
+            "id": "ba948243-4881-44de-ad9a-e0f55044159f", 
+            "description": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.",
+            "level": 1,
+            "range": "Self, 15-foot cone",
+            "duration": "1 round",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A pinch of powder or sand that is colored red, yellow, and blue"
+            },
+            "school": "illusion"
+        },
+        { 
+            "name": "Command", 
+            "id": "eedc57b0-5c91-4254-a8d2-d93cb54b2ad8", 
+            "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the GM determines how the target behaves. If the target can’t follow your  command, the spell ends.\nApproach: The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.\nDrop: The target drops whatever it is holding and  then ends its turn.\nFlee: The target spends its turn moving away from you by the fastest available means.\nGrovel: The target falls prone and then end its turn.\nHalt: The target doesn’t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.\nWhen you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+            "level": 1,
+            "range": 60,
+            "duration": "1 round",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Cure Wounds", 
+            "id": "07e69325-723f-45e1-a632-8a747d835728", 
+            "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\nWhen you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
+            "level": 1,
+            "range": "touch",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Detect Evil and Good", 
+            "id": "62634aad-3754-4ea3-be95-2708ebdab3a7", 
+            "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+            "level": 1,
+            "range": "self",
+            "duration": "concentration, up to 10 minutes",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "divination"
+        },
+        { 
+            "name": "Detect Magic", 
+            "id": "e5c90b9e-9590-4050-9dc7-40f14e2c6ae1", 
+            "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+            "level": 1,
+            "range": "self",
+            "duration": "concentration, up to 10 minutes",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "conjuration"
+        },
+        { 
+            "name": "Disguise Self", 
+            "id": "f3f8ead5-3969-41a6-a863-09f18811dde1", 
+            "description": "You make yourself — including your clothing, armor, weapons, and other belongings on your person — look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can’t change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.",
+            "level": 1,
+            "range": "self",
+            "duration": "1 hour",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "illusion"
+        },
+        { 
+            "name": "Faeire Fire", 
+            "id": "49868ff5-11a5-4d9f-b70d-adca9fec1f34", 
+            "description": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.",
+            "level": 1,
+            "range": 60,
+            "duration": "concentration, up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Feather Fall", 
+            "id": "fb37362f-1985-474e-a399-7401b80ab5d7", 
+            "description": "Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.",
+            "level": 1,
+            "range": 60,
+            "duration": "1 minute",
+            "concentration": false,
+            "castingTime": "1 reaction",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": true,
+                "materialDescription": "A small feather or piece of down"
+            },
+            "school": "transmutation"
+        },
+        { 
+            "name": "Find Familiar", 
+            "id": "79d4e2a3-96c2-499f-b0dd-154fadb132cf", 
+            "description": "You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.",
+            "level": 1,
+            "range": 10,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 hour",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier"
+            },
+            "school": "conjuration"
+        },
+        { 
+            "name": "Fog Cloud", 
+            "id": "02504055-b348-42af-aa50-757ccb4200da", 
+            "description": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.\nWhen you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+            "level": 1,
+            "range": 120,
+            "duration": "concentration, up to 1 hour",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "conjuration"
+        },
+        { 
+            "name": "Guiding Bolt", 
+            "id": "8998d160-431f-4165-ab80-4bf1e9c8d424", 
+            "description": "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+            "level": 1,
+            "range": 120,
+            "duration": "1 round",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Healing Word", 
+            "id": "8aa90fa7-7039-4e96-adbf-27fde78da110", 
+            "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\nWhen you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
+            "level": 1,
+            "range": 60,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 bonus action",
+            "components": {
+                "verbal": true,
+                "somatic": false,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Heroism", 
+            "id": "c3ed0baf-992e-40af-a969-071e8e641da7", 
+            "description": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.\nWhen you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "level": 1,
+            "range": "touch",
+            "duration": "up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Hideous Laughter", 
+            "id": "ae73cd41-1223-4930-afa4-fbe32556281c", 
+            "description": "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn’t affected. At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it’s triggered by damage. On a success, the spell ends.",
+            "level": 1,
+            "range": 30,
+            "duration": "concentration, up to 1 minute",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "Tiny tarts and a feather that is waved in the air"
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Inflict Wounds", 
+            "id": "53541979-b39b-46c7-82f5-125820bab4a4", 
+            "description": "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
+            "level": 1,
+            "range": "touch",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "necromancy"
+        },
+        { 
+            "name": "Jump", 
+            "id": "34096cb5-f267-4ccf-8356-7ee396eb2fec", 
+            "description": "You touch a creature. The creature’s jump distance is tripled until the spell ends.",
+            "level": 1,
+            "range": "touch",
+            "duration": "1 minute",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A grasshopper’s hind leg"
+            },
+            "school": "transmutation"
+        },
+        { 
+            "name": "Mage Armor", 
+            "id": "8d25c369-8660-47ba-a67d-c54a1e56ff2f", 
+            "description": "You touch a willing creature who isn’t wearing armor, and a protective magical force surrounds it until the spell ends. The target’s base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+            "level": 1,
+            "range": "touch",
+            "duration": "8 hours",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A piece of cured leather"
+            },
+            "school": "abjuration"
+        },
+        { 
+            "name": "Magic Missile", 
+            "id": "7dab1502-53f2-4020-9a31-cb83d36582cd", 
+            "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+            "level": 1,
+            "range": 120,
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        },
+        { 
+            "name": "Protection From Evil and Good", 
+            "id": "52c3c347-34c7-4b2d-95be-b6fa9f4f940b", 
+            "description": "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.\nThe protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can’t be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.",
+            "level": 1,
+            "range": "touch",
+            "duration": "concentration, up to 10 minutes",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "Holy water or powdered silver and iron, which the spell consumes"
+            },
+            "school": "abjuration"
+        },
+        { 
+            "name": "Sanctuary", 
+            "id": "5fd6c4e2-e7cd-4f1c-8712-e5e2db74e29d", 
+            "description": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.\nIf the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.",
+            "level": 1,
+            "range": 30,
+            "duration": "1 minute",
+            "concentration": false,
+            "castingTime": "1 bonus action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": " Asmall silver mirror"
+            },
+            "school": "abjuration"
+        },
+        { 
+            "name": "Shield", 
+            "id": "ca6d6e08-ff2e-41d6-816f-d55f6ef450f5", 
+            "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+            "level": 1,
+            "range": "self",
+            "duration": "1 round",
+            "concentration": false,
+            "castingTime": "1 reaction (which you take when you are hit by an attack or targeted by the magic missile spell)",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "abjuration"
+        },
+        { 
+            "name": "Shield of Faith", 
+            "id": "4e48fdcd-c505-4d2e-9798-49fe75c16aee", 
+            "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+            "level": 1,
+            "range": 60,
+            "duration": "concentration, up to 10 minutes",
+            "concentration": true,
+            "castingTime": "1 bonus action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A small parchment with a bit of holy text written on it"
+            },
+            "school": "abjuration"
+        },
+        { 
+            "name": "Silent Image", 
+            "id": "515a704f-0774-4cd3-9f75-fc3ef66cefba", 
+            "description": " You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can’t create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte’s stench).\nAs long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.\nPhysical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.",
+            "level": 1,
+            "range": 60,
+            "duration": "concetration, up to 10 minutes",
+            "concentration": true,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A bit of fleece"
+            },
+            "school": "illusion"
+        },
+        { 
+            "name": "Sleep", 
+            "id": "a5e9330a-f9d0-4a3c-9ace-a6c7a080be42", 
+            "description": " This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.\nUndead and creatures immune to being charmed aren’t affected by this spell.\nWhen you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.",
+            "level": 1,
+            "range": 90,
+            "duration": "1 minute",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": true,
+                "materialDescription": "A pinch of fine sand, rose petals, or a cricket"
+            },
+            "school": "enchantment"
+        },
+        { 
+            "name": "Speak with Animals", 
+            "id": "144f983f-0681-4953-b75d-705046f0dcd4", 
+            "description": " You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at a minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM’s discretion.",
+            "level": 1,
+            "range": "self",
+            "duration": "10 minutes",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "divination"
+        },
+        { 
+            "name": "Thunderwave", 
+            "id": "015f97f3-e899-4272-a25f-998eb7a865fb", 
+            "description": " A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed.\nIn addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+            "level": 1,
+            "range": "self, 15-foot cube",
+            "duration": "instantaneous",
+            "concentration": false,
+            "castingTime": "1 action",
+            "components": {
+                "verbal": true,
+                "somatic": true,
+                "material": false,
+                "materialDescription": ""
+            },
+            "school": "evocation"
+        }
+    ],
+    "abilities": [
+        { "name": "Strength", "id": "0caab33e-f424-4a44-94cd-0c6951e5bdfe", "description": "Strength measures your physical power, determining how hard you can hit and how much you can lift." },
+        { "name": "Dexterity", "id": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2", "description": "Dexterity reflects agility, reflexes, and balance, keeping you nimble in combat and steady on your feet." },
+        { "name": "Constitution", "id": "b9b14f85-78db-49ea-b07b-b8bdd7a40046", "description": "Constitution represents your stamina and resilience, governing your ability to endure physical hardship." },
+        { "name": "Intelligence", "id": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed", "description": "Intelligence gauges your reasoning and memory, essential for solving puzzles and mastering magic." },
+        { "name": "Wisdom", "id": "468b3218-340b-4263-9450-dc72e6750f16", "description": "Wisdom reflects perception and intuition, attuning you to the world around you and your inner voice." },
+        { "name": "Charisma", "id": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9", "description": "Charisma captures your force of personality, influencing others through charm, leadership, or intimidation." }
+    ],
+    "skills": [
+        { 
+            "name": "Athletics",
+            "id": "f0282ac7-16a8-42c4-a50f-4336db5c0162",
+            "ability": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+            "description": "Athletics determines your physical prowess in activities like climbing, jumping, and swimming." 
+        },
+        { 
+            "name": "Acrobatics",
+            "id": "26cd5299-99a3-42ad-bf86-73c453104a08",
+            "ability": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+            "description": "Acrobatics measures your ability to perform flips, tumbles, and maintain balance in tricky situations." 
+        },
+        { 
+            "name": "Sleight of Hand",
+            "id": "c0570ecd-b0f1-4cdf-b71a-a558cdef866d",
+            "ability": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+            "description": "Sleight of Hand is your ability to pick pockets, perform tricks, or handle objects deftly" 
+        },
+        { 
+            "name": "Stealth",
+            "id": "032f782b-2b99-4da4-8fcd-8dae8a207d7d",
+            "ability": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+            "description": "Stealth measures your skill at moving silently and avoiding detection." 
+        },
+        { 
+            "name": "Arcana",
+            "id": "2d27709a-bc52-422e-9268-0f9f3967c5f9",
+            "ability": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+            "description": "Arcana represents your knowledge of magic, spells, and ancient mystical traditions." 
+        },
+        { 
+            "name": "History",
+            "id": "d8eb6094-2655-4fdd-bfb4-ed01163c4cf5",
+            "ability": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+            "description": "History is your grasp of past events, cultures, and notable figures." 
+        },
+        { 
+            "name": "Investigation",
+            "id": "f0e83eb0-d3a7-40ee-b1a5-ea146b4dd094",
+            "ability": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+            "description": "Investigation is your talent for finding clues and solving puzzles through careful analysis." 
+        },
+        { 
+            "name": "Nature",
+            "id": "571128ca-be8c-41ac-a90a-41b55c90746f",
+            "ability": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+            "description": "Nature gauges your understanding of the natural world, including plants, animals, and weather." 
+        },
+        { 
+            "name": "Religion",
+            "id": "540937ab-6c67-4c5f-9102-c8b180729a8e",
+            "ability": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+            "description": "Religion represents your knowledge of deities, holy rites, and religious traditions." 
+        },
+        { 
+            "name": "Animal Handling",
+            "id": "0cf988cb-ed38-40f8-948f-91b679cf502c",
+            "ability": "468b3218-340b-4263-9450-dc72e6750f16",
+            "description": "Animal Handling reflects your knack for calming, training, or understanding the behaviour of animals." 
+        },
+        { 
+            "name": "Insight",
+            "id": "5fec3a3b-806d-47c5-9101-2fb77832ec18",
+            "ability": "468b3218-340b-4263-9450-dc72e6750f16",
+            "description": "Insight reflects your ability to read people and discern their true intentions." 
+        },
+        { 
+            "name": "Medicine",
+            "id": "a9ed3d93-d90a-4cbe-946c-eba444b1c8c4",
+            "ability": "468b3218-340b-4263-9450-dc72e6750f16",
+            "description": "Medicine represents your skill in diagnosing ailments and tending to the injured or sick." 
+        },
+        { 
+            "name": "Perception",
+            "id": "fc38c64c-bc06-4fd1-b38e-3912d517635d",
+            "ability": "468b3218-340b-4263-9450-dc72e6750f16",
+            "description": "Perception measures your alertness and ability to spot hidden details in your surroundings." 
+        },
+        { 
+            "name": "Survival",
+            "id": "46323de2-37a8-4b4e-9b63-63bec924f21c",
+            "ability": "468b3218-340b-4263-9450-dc72e6750f16",
+            "description": "Survival reflects your ability to navigate the wilderness, track creatures, and endure harsh environments." 
+        },
+        { 
+            "name": "Deception",
+            "id": "78f8567e-8c82-4f41-ae7e-112a299dd0aa",
+            "ability": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+            "description": "Deception gauges your ability to mislead others with lies, disguises, or feints." 
+        },
+        { 
+            "name": "Intimidation",
+            "id": "57b45a74-aacb-4ea7-9d5d-8219b8f15851",
+            "ability": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+            "description": "Intimidation measures your ability to influence others through threats or forceful presence." 
+        },
+        { 
+            "name": "Performance",
+            "id": "3bbcebbe-8e83-49af-97e0-66648d020ccb",
+            "ability": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+            "description": "Performance reflects your ability to captivate an audience with music, acting, or other forms of expression." 
+        },
+        { 
+            "name": "Persuasion",
+            "id": "affa7db3-34db-4f19-aca3-afae012f47b4",
+            "ability": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+            "description": "Persuasion is your knack for influencing others through diplomacy and charm." 
+        }
+    ],
+    "weapons": [
+        { 
+            "name": "Handaxe",
+            "id": "982b9a2a-0cec-4a3d-81a4-c3fcd1100435",
+            "damageType": "slashing",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": false,
+            "wield": "oneHanded",
+            "weightCategory": "light",
+            "thrown": true
+        },
+        { 
+            "name": "Light hammer", 
+            "id": "8327fc7c-43bf-4d21-b262-cf4043c49773",
+            "damageType": "bludgeoning",
+            "damageDice": {
+                "number": 1,
+                "size": 4
+            },
+            "finesse": false,
+            "wield": "oneHanded",
+            "weightCategory": "light",
+            "thrown": true
+        },
+        { 
+            "name": "Javelin",
+            "id": "66119965-f10b-4884-bfcf-a6181335f716",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": false,
+            "wield": "oneHanded",
+            "weightCategory": "standard",
+            "thrown": true
+        },
+        { 
+            "name": "Dagger",
+            "id": "cf5fb278-0a70-4c5c-9079-b144eccf88f6",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 4
+            },
+            "finesse": true,
+            "wield": "oneHanded",
+            "weightCategory": "light",
+            "thrown": true
+        },
+        { 
+            "name": "Mace",
+            "id": "1e8ffe24-edf0-446a-9ae9-8ed0befa7c32",
+            "damageType": "bludgeoning",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": false,
+            "wield": "oneHanded",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Light crossbow",
+            "id": "8484873b-f0b4-4f8f-a2f6-29322f6bbf2c",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 8
+            },
+            "finesse": false,
+            "wield": "twoHanded",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Shortbow",
+            "id": "2047a9b1-2c0d-4b3b-808e-ebf6dd367c27", 
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": false,
+            "wield": "twoHanded",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Quarterstaff",
+            "id": "24f750b2-1b5d-4b4b-b47a-de380732f3b2",
+            "damageType": "bludgeoning",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": false,
+            "wield": "versatile",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Battleaxe",
+            "id": "6c62ade7-afec-4664-b17c-b94cfaa5412a",
+            "damageType": "slashing",
+            "damageDice": {
+                "number": 1,
+                "size": 8
+            },
+            "finesse": false,
+            "wield": "versatile",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Greataxe",
+            "id": "6dc22098-2109-4736-ac46-3e7834f3e4f6",
+            "damageType": "slashing",
+            "damageDice": {
+                "number": 1,
+                "size": 12
+            },
+            "finesse": false,
+            "wield": "twoHanded",
+            "weightCategory": "heavy",
+            "thrown": false
+        },
+        { 
+            "name": "Rapier",
+            "id": "d36c2f28-c6ec-40d9-8ab5-07bf44ab0dbb",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 8
+            },
+            "finesse": true,
+            "wield": "oneHanded",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Shortsword",
+            "id": "2fd75b25-a14a-4c59-bf6e-93787112f5e0",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": true,
+            "wield": "oneHanded",
+            "weightCategory": "light",
+            "thrown": false
+        },
+        { 
+            "name": "Longsword",
+            "id": "b873347c-3ec6-4dbc-b185-2607132972ff",
+            "damageType": "slashing",
+            "damageDice": {
+                "number": 1,
+                "size": 8
+            },
+            "finesse": false,
+            "wield": "versatile",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Warhammer",
+            "id": "1f80d41b-2780-41d9-b014-385ada080724", 
+            "damageType": "bludgeoning",
+            "damageDice": {
+                "number": 1,
+                "size": 8
+            },
+            "finesse": false,
+            "wield": "versatile",
+            "weightCategory": "standard",
+            "thrown": false
+        },
+        { 
+            "name": "Hand crossbow",
+            "id": "8e3965b3-4c03-48b7-94c3-5a29a17e7cc2",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 6
+            },
+            "finesse": false,
+            "wield": "oneHanded",
+            "weightCategory": "light",
+            "thrown": false
+        },
+        { 
+            "name": "Longbow",
+            "id": "281cb46d-d4f9-4f3d-8ee7-7f72ece26912",
+            "damageType": "piercing",
+            "damageDice": {
+                "number": 1,
+                "size": 8
+            },
+            "finesse": false,
+            "wield": "twoHanded",
+            "weightCategory": "heavy",
+            "thrown": false
+        }
+    ],
+    "armor": [
+        { 
+            "name": "Leather Armour",
+            "id": "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
+            "baseAC": 11,
+            "additiveAC": 0,
+            "dexterityBonus": "full",
+            "type": "light",
+            "minStrength": 0,
+            "stealthDisadvantage": false
+        },
+        { 
+            "name": "Scale Mail",
+            "id": "9b541bd7-1f40-4cd3-9b14-6498681920d7",
+            "baseAC": 14,
+            "additiveAC": 0,
+            "dexterityBonus": "max2",
+            "type": "medium",
+            "minStrength": 0,
+            "stealthDisadvantage": true
+        },
+        { 
+            "name": "Chain Mail",
+            "id": "7aadb6ca-a9f7-4319-920a-db7891f37d65",
+            "baseAC": 16,
+            "additiveAC": 0,
+            "dexterityBonus": "none",
+            "type": "heavy",
+            "minStrength": 13,
+            "stealthDisadvantage": true
+        },
+        { 
+            "name": "Shield",
+            "id": "46abebad-ecc3-42e2-90f8-078b73a2d8df",
+            "baseAC": 0,
+            "additiveAC": 2,
+            "dexterityBonus": "none",
+            "type": "shield",
+            "minStrength": 0,
+            "stealthDisadvantage": false
+        }
+    ],
+    "items": [
+        {
+            "name": "Explorer's Pack",
+            "id": "578304a0-bae5-479c-9f79-7046b8fb3c58",
+            "description": "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+        },
+        {
+            "name": "Entertainer's Pack",
+            "id": "d5bd0a43-7dfe-493e-9741-653f792caa7e",
+            "description": "Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit."
+        },
+        {
+            "name": "Priest's Pack",
+            "id": "c1f86cf1-b62e-4fea-84b7-1c5900118b5e",
+            "description": "Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin."
+        },
+        {
+            "name": "Dungeoneer's Pack",
+            "id": "603528ae-af92-4f4e-b570-fa3cd96aa2d9",
+            "description": "Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+        },
+        {
+            "name": "Burglar's Pack",
+            "id": "a7e46a36-8e03-4bf1-bb01-7239b7eecb0d",
+            "description": " Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days of rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+        },
+        {
+            "name": "Scholar's Pack",
+            "id": "d7d6b248-c769-4c3f-933e-56ce4256a306",
+            "description": "Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife."
+        },
+        {
+            "name": "Spellbook",
+            "id": "9d5290a9-1110-48b8-9e10-644cb3b00e2e",
+            "description": "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
+        },
+        {
+            "name": "Lute",
+            "id": "a000e492-4418-416d-849b-09d64c200eaa",
+            "description": "A musical instrument that requires proficiency to play. This instrument is typically used by bards."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "string",
+    "id": "uuid",
+    "damageType": "bludgeoning | piercing | slashing",
+    "damageDice": {
+        "number": "number",
+        "size": "number"
+    },
+    "finesse": "boolean",
+    "wield": "oneHanded | versatile | twoHanded",
+    "weightCategory": "light | standard | heavy",
+    "thrown": "boolean"
+}

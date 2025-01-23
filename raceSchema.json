@@ -1,0 +1,18 @@
+{
+    "name": "string",
+    "description": "string",
+    "size": "Small | Medium",
+    "speed": "number",
+    "darkvision": "boolean",
+    "abilityBonuses": {
+        "strength": "number",
+        "dexterity": "number",
+        "constitution": "number",
+        "intelligence": "number",
+        "wisdom": "number",
+        "charisma": "number"
+    },
+    "weaponProficiencies": ["string"],
+    "additionalSkillProficiencies": "number",
+    "additionalProperties": [{"name": "string", "description": "string"}]
+}
