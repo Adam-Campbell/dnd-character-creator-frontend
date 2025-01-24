@@ -183,6 +183,41 @@ document.addEventListener("alpine:init", () => {
         resetStateOnClassChange(e) {
             console.log(e.target.value);
         },
+        addCantrip(cantripId) {
+            this.character.classCantripChoices.push(cantripId);
+        },
+        removeCantrip(cantripId) {
+            this.character.classCantripChoices = this.character.classCantripChoices.filter(c => c !== cantripId);
+        },
+        addSpell(spellId) {
+            this.character.classSpellChoices.push(spellId);
+        },
+        removeSpell(spellId) {
+            this.character.classSpellChoices = this.character.classSpellChoices.filter(s => s !== spellId);
+        },
+        /**
+         * Truncates the given text if it is longer than maxLength, adding '...' to the end.
+         * @param {*} text 
+         * @param {*} maxLength 
+         * @returns 
+         */
+        truncateText(text, maxLength) {
+            // This implementation will suffice for now. However, we should ensure that
+            // it doesn't cut off mid-word or mid line-break (\n). Either truncate more
+            // or less if this happens. 
+            if (text.length > maxLength) {
+                return text.slice(0, maxLength) + '...';
+            }
+            return text;
+        },
+        /**
+         * Replaces line breaks in the given text with <br> tags, which will be respected by HTML.
+         * @param {*} text 
+         * @returns 
+         */
+        formatLineBreaks(text) {
+            return text.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+        },
         /**
          * When the user has finished creating their character, POST the character to the server.
          */

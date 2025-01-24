@@ -274,7 +274,71 @@
                 <!-- Markup for spells selection -->
                 <template data-if="currentPage === 'spells'">
                     <div>
-
+                        <div>
+                            <h3>Chosen cantrips</h3>
+                        </div>
+                        <h3>Cantrips</h3>
+                        <ul>
+                            <template data-for="cantrip in chosenClass.spellcasting.cantrips.from">
+                                <li data-data="{ open: false }">
+                                    <h5 data-text="cantrip.name"></h5>
+                                    <span data-text="cantrip.school"></span>
+                                    <template data-if="open">
+                                        <div>
+                                            <p data-html="formatLineBreaks(cantrip.description)"></p>
+                                            <p data-text="`Range: ${cantrip.range}`"></p>
+                                            <p data-text="`Casting time: ${cantrip.castingTime}`"></p>
+                                            <p data-text="`Duration: ${cantrip.duration}`"></p>
+                                            <p data-text="cantrip.concentration ? 'Requires concentration' : 'Does not require concentration' "></p>
+                                            <button data-on:click="() => open = false">See less</button>
+                                        </div>
+                                    </template>
+                                    <template data-if="!open">
+                                        <div>
+                                            <p data-html="formatLineBreaks(truncateText(cantrip.description, 200))"></p>
+                                            <button data-on:click="() => open = true">See more</button>
+                                        </div>
+                                    </template>
+                                    <template data-if="character.classCantripChoices.includes(cantrip.id)">
+                                        <button data-on:click="() => removeCantrip(cantrip.id)">Remove Cantrip</button>
+                                    </template>
+                                    <template data-if="!character.classCantripChoices.includes(cantrip.id)">
+                                        <button data-on:click="() => addCantrip(cantrip.id)">Add Cantrip</button>
+                                    </template>
+                                </li>
+                            </template>
+                        </ul>
+                        <h3>Spells</h3>
+                        <ul>
+                            <template data-for="spell in chosenClass.spellcasting.spells.from">
+                                <li data-data="{ open: false }">
+                                    <h5 data-text="spell.name"></h5>
+                                    <span data-text="spell.school"></span>
+                                    <template data-if="open">
+                                        <div>
+                                            <p data-html="formatLineBreaks(spell.description)"></p>
+                                            <p data-text="`Range: ${spell.range}`"></p>
+                                            <p data-text="`Casting time: ${spell.castingTime}`"></p>
+                                            <p data-text="`Duration: ${spell.duration}`"></p>
+                                            <p data-text="spell.concentration ? 'Requires concentration' : 'Does not require concentration' "></p>
+                                            <button data-on:click="() => open = false">See less</button>
+                                        </div>
+                                    </template>
+                                    <template data-if="!open">
+                                        <div>
+                                            <p data-html="formatLineBreaks(truncateText(spell.description, 200))"></p>
+                                            <button data-on:click="() => open = true">See more</button>
+                                        </div>
+                                    </template>
+                                    <template data-if="character.classSpellChoices.includes(spell.id)">
+                                        <button data-on:click="() => removeSpell(spell.id)">Remove Spell</button>
+                                    </template>
+                                    <template data-if="!character.classSpellChoices.includes(spell.id)">
+                                        <button data-on:click="() => addSpell(spell.id)">Add Spell</button>
+                                    </template>
+                                </li>
+                            </template>
+                        </ul>
                     </div>
                 </template>
 

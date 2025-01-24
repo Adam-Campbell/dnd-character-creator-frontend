@@ -93,8 +93,8 @@ function denormaliseClass(cls, data) {
     // Spellcasting can be replaced as-is, but only if the class is a caster class.
     if (cls.spellcasting.ability !== null) {
         cls.spellcasting.ability = data.abilities.find(a => a.id === cls.spellcasting.ability);
-        cls.spellcasting.cantrips.from = cls.spellcasting.cantrips.from.map(c => data.cantrips.find(s => s.id === c));
-        cls.spellcasting.spells.from = cls.spellcasting.spells.from.map(s => data.spells.find(s => s.id === s));
+        cls.spellcasting.cantrips.from = cls.spellcasting.cantrips.from.map(id => data.cantrips.find(c => c.id === id));
+        cls.spellcasting.spells.from = cls.spellcasting.spells.from.map(id => data.spells.find(s => s.id === id));
     }
 }
 
@@ -145,4 +145,3 @@ export async function fetchStaticData() {
         console.error('Error fetching JSON:', error);
     }
 }
-
