@@ -6,18 +6,18 @@
  */
 export function getEmptyCharacter() {
     return {
-        race: "",
-        class: "",
+        race: "095914ea-d0a5-41dd-a003-6b5d4558a3ad",
+        class: "44f84547-8935-4ab4-bd29-fb60d0000d04",
         classSkillChoices: [],
         classCantripChoices: [],
         classSpellChoices: [],
         abilityPoints: [
-            { id: "0caab33e-f424-4a44-94cd-0c6951e5bdfe", value: null },
-            { id: "fd107c7f-4536-4b36-bf43-e49d92a3c4c2", value: null },
-            { id: "b9b14f85-78db-49ea-b07b-b8bdd7a40046", value: null },
-            { id: "44fbcb3c-d548-4a3c-aa85-4c55e05aabed", value: null },
-            { id: "468b3218-340b-4263-9450-dc72e6750f16", value: null },
-            { id: "b15c2aa9-87e7-408d-89a7-3bbd64d981a9", value: null },
+            { id: "0caab33e-f424-4a44-94cd-0c6951e5bdfe", value: '--' },
+            { id: "fd107c7f-4536-4b36-bf43-e49d92a3c4c2", value: '--' },
+            { id: "b9b14f85-78db-49ea-b07b-b8bdd7a40046", value: '--' },
+            { id: "44fbcb3c-d548-4a3c-aa85-4c55e05aabed", value: '--' },
+            { id: "468b3218-340b-4263-9450-dc72e6750f16", value: '--' },
+            { id: "b15c2aa9-87e7-408d-89a7-3bbd64d981a9", value: '--' },
         ],
         name: "",
         age: null,

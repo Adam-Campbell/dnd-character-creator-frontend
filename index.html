@@ -18,7 +18,9 @@
                     <button data-on:click="() => setPage('race')">Race</button>
                     <button data-on:click="() => setPage('class')">Class</button>
                     <button data-on:click="() => setPage('abilityPoints')">Ability Points</button>
-                    <button data-on:click="() => setPage('spells')">Spells</button>
+                    <template data-if="isCaster">
+                        <button data-on:click="() => setPage('spells')">Spells</button>
+                    </template>
                     <button data-on:click="() => setPage('background')">Background</button>
                     <button data-on:click="() => setPage('appearance')">Appearance</button>
                     <button data-on:click="() => setPage('summary')">Summary</button>
@@ -129,8 +131,54 @@
                 <!-- Markup for ability points selection -->
                 <template data-if="currentPage === 'abilityPoints'">
                     <div>
-                        <div>Summary: todo</div>
+                        <p>Here is where we explain about the standard array</p>
                         <button data-on:click="resetAbilityPoints">Reset to class default</button>
+                        <div>
+                            <div>
+                                <h3>Strength</h3>
+                                <p data-text="`Total: ${getAdjustedAbilityScore('strength')}`"></p>
+                                <p data-text="`Base: ${getAbilityBaseScore('strength')}`"></p>
+                                <p data-text="`Race Bonus: ${getRacialAbilityBonus('strength')}`"></p>
+                                <p data-text="`Modifier: ${getAbilityModifier('strength')}`"></p>
+                            </div>
+                            <div>
+                                <h3>Dexterity</h3>
+                                <p data-text="`Total: ${getAdjustedAbilityScore('dexterity')}`"></p>
+                                <p data-text="`Base: ${getAbilityBaseScore('dexterity')}`"></p>
+                                <p data-text="`Race Bonus: ${getRacialAbilityBonus('dexterity')}`"></p>
+                                <p data-text="`Modifier: ${getAbilityModifier('dexterity')}`"></p>
+                            </div>
+                            <div>
+                                <h3>Constitution</h3>
+                                <p data-text="`Total: ${getAdjustedAbilityScore('constitution')}`"></p>
+                                <p data-text="`Base: ${getAbilityBaseScore('constitution')}`"></p>
+                                <p data-text="`Race Bonus: ${getRacialAbilityBonus('constitution')}`"></p>
+                                <p data-text="`Modifier: ${getAbilityModifier('constitution')}`"></p>
+                            </div>
+                            <div>
+                                <h3>Intelligence</h3>
+                                <p data-text="`Total: ${getAdjustedAbilityScore('intelligence')}`"></p>
+                                <p data-text="`Base: ${getAbilityBaseScore('intelligence')}`"></p>
+                                <p data-text="`Race Bonus: ${getRacialAbilityBonus('intelligence')}`"></p>
+                                <p data-text="`Modifier: ${getAbilityModifier('intelligence')}`"></p>
+                            </div>
+                            <div>
+                                <h3>Wisdom</h3>
+                                <p data-text="`Total: ${getAdjustedAbilityScore('wisdom')}`"></p>
+                                <p data-text="`Base: ${getAbilityBaseScore('wisdom')}`"></p>
+                                <p data-text="`Race Bonus: ${getRacialAbilityBonus('wisdom')}`"></p>
+                                <p data-text="`Modifier: ${getAbilityModifier('wisdom')}`"></p>
+                            </div>
+                            <div>
+                                <h3>Charisma</h3>
+                                <p data-text="`Total: ${getAdjustedAbilityScore('charisma')}`"></p>
+                                <p data-text="`Base: ${getAbilityBaseScore('charisma')}`"></p>
+                                <p data-text="`Race Bonus: ${getRacialAbilityBonus('charisma')}`"></p>
+                                <p data-text="`Modifier: ${getAbilityModifier('charisma')}`"></p>
+                            </div>
+                        </div>
+
+                        
                         <!-- Strength points select -->
                         <div>
                         <label for="strength-points-select">Strength:</label>

@@ -1,5 +1,20 @@
 import { fetchStaticData, getEmptyCharacter } from "./utils.js";
 
+const abilityIndexMap = {
+    "strength": 0,
+    "dexterity": 1,
+    "constitution": 2,
+    "intelligence": 3,
+    "wisdom": 4,
+    "charisma": 5,
+    0: "strength",
+    1: "dexterity",
+    2: "constitution",
+    3: "intelligence",
+    4: "wisdom",
+    5: "charisma"
+}
+
 document.addEventListener("alpine:init", () => {
     console.log("alpine has initialised");
     Alpine.prefix("data-")
@@ -46,7 +61,55 @@ document.addEventListener("alpine:init", () => {
             const raceSkillProficiencies = this.chosenRace ? this.chosenRace.additionalSkillProficiencies : 0;
             return classSkillProficiencies + raceSkillProficiencies;
         },
-        
+        get isCaster() {
+            return this.chosenClass.spellcasting.ability !== null;
+        },
+        /**
+         * Get the current base score for the given ability, with no bonuses applied.
+         * @param {*} abilityName 
+         * @returns 
+         */
+        getAbilityBaseScore(abilityName) {
+            const idx = abilityIndexMap[abilityName];
+            return this.character.abilityPoints[idx].value;
+        },
+        /**
+         * Get the racial ability bonus for the given ability.
+         * @param {*} abilityName 
+         * @returns 
+         */
+        getRacialAbilityBonus(abilityName) {
+            const idx = abilityIndexMap[abilityName];
+            const bonus = this.chosenRace.abilityBonuses[idx];;
+            return bonus.bonus;
+        },
+        /**
+         * Get the ability score for the given ability, with racial bonuses applied.
+         * @param {*} abilityName 
+         * @returns 
+         */
+        getAdjustedAbilityScore(abilityName) {
+            const idx = abilityIndexMap[abilityName];
+            const baseScore = this.character.abilityPoints[idx].value;
+            const racialBonus = this.getRacialAbilityBonus(abilityName);
+            if (baseScore === "--") {
+                return "--";
+            } else {
+                return baseScore + racialBonus;
+            }
+        },
+        /**
+         * Get the modifier for the given ability (adjusted).
+         * @param {*} abilityName 
+         * @returns 
+         */
+        getAbilityModifier(abilityName) {
+            const score = this.getAdjustedAbilityScore(abilityName);
+            if (score === "--") {
+                return 0;
+            }
+            return Math.floor((score - 10) / 2);
+        },
         /**
          * Adds or removes the given skillId from the classSkillChoices array. Respects the
          * computedNumberOfSkillProficiencies, removing the oldest skill if the user tries to
