@@ -30,7 +30,7 @@
                 <template data-if="currentPage === 'race'">
                     <div>
                         <label for="race-select">Choose a race:</label>
-                        <select id="race-select" data-model="character.race">
+                        <select id="race-select" data-model="character.race" data-on:change="resetStateOnRaceChange">
                             <template data-for="race in staticData.races">
                                 <option data-bind:value="race.id" data-text="race.name" data-bind:selected="character.race === race.id ? true : false">.</option>
                             </template>
@@ -112,7 +112,12 @@
                                     <h5 data-text="`You can choose ${computedNumberOfSkillProficiencies} of the following skills to be proficient in:`"></h5>
                                     <template data-for="skill in chosenClass.proficiencies.skills.from">
                                         <div>
-                                            <input data-bind:id="skill.id" type="checkbox" data-bind:checked="character.classSkillChoices.includes(skill.id)" data-on:change="toggleSkillProficiency(skill.id)">
+                                            <input 
+                                                data-bind:id="skill.id" 
+                                                type="checkbox" 
+                                                data-bind:checked="character.classSkillChoices.includes(skill.id)" 
+                                                data-on:change="toggleSkillProficiency(skill.id)"
+                                                data-bind:disabled="Boolean(character.classSkillChoices.length >= computedNumberOfSkillProficiencies &&  !character.classSkillChoices.includes(skill.id))">
                                             <label data-bind:for="skill.id" data-text="skill.name"></label>
                                         </div>
                                     </template>
@@ -123,6 +128,18 @@
                                 <template data-for="equipment in chosenClass.equipment">
                                     <span data-text="`${equipment.item.name} x ${equipment.quantity}`"></span>
                                 </template>
+
+                                <template data-if="chosenClass.additionalProperties.length > 0">
+                                    <div>
+                                        <h4>Additional Properties:</h4>
+                                        <template data-for="property in chosenClass.additionalProperties">
+                                            <div>
+                                                <h5 data-text="property.name"></h5>
+                                                <p data-text="property.description"></p>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
                             </div>
                         </template>    
                     </div>
@@ -132,7 +149,9 @@
                 <template data-if="currentPage === 'abilityPoints'">
                     <div>
                         <p>Here is where we explain about the standard array</p>
-                        <button data-on:click="resetAbilityPoints">Reset to class default</button>
+                        <p data-text="`Your primary ability is ${chosenClass.primaryAbility.name}`"></p>
+                        <button data-on:click="resetAbilityPoints">Reset ability points</button>
+                        <button data-on:click="setAbilityPointsToChosenClassDefaults">Use class defaults</button>
                         <div>
                             <div>
                                 <h3>Strength</h3>

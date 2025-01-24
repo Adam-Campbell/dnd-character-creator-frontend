@@ -391,7 +391,17 @@
                     "value": 10
                 }
             ],
-            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+            "primaryAbility": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+            "additionalProperties": [
+                { 
+                    "name": "Rage", 
+                    "description": " In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. \nWhile raging, you gain the following benefits if you aren't wearing heavy armor: \nYou have advantage on Strength checks and Strength saving throws. \nWhen you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian. \nYou have resistance to bludgeoning, piercing, and slashing damage. \nIf you are able to cast spells, you can't cast them or concentrate on them while raging. \nYour rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action. \nOnce you have raged the number of times allowed by your barbarian level, you must finish a long rest before you can rage again." 
+                },
+                { 
+                    "name": "Unarmored Defense",  
+                    "description": " While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit." 
+                }
+            ]
         },
         {
             "name": "Bard",
@@ -528,7 +538,13 @@
                     "value": 15
                 }
             ],
-            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+            "primaryAbility": "b15c2aa9-87e7-408d-89a7-3bbd64d981a9",
+            "additionalProperties": [
+                { 
+                    "name": "Bardic Inspiration",
+                    "description": " You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. \nOnce within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time. \nYou can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest." 
+                }
+            ]
         },
         {
             "name": "Cleric",
@@ -539,6 +555,7 @@
                 "armor": [
                     "b19e1ad4-b0d1-47c0-9641-72d51d1ce907",
                     "9b541bd7-1f40-4cd3-9b14-6498681920d7",
+                    "7aadb6ca-a9f7-4319-920a-db7891f37d65",
                     "46abebad-ecc3-42e2-90f8-078b73a2d8df"
                 ],
                 "weapons": [
@@ -642,7 +659,17 @@
                     "value": 12
                 }
             ],
-            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+            "primaryAbility": "468b3218-340b-4263-9450-dc72e6750f16",
+            "additionalProperties": [
+                { 
+                    "name": "Disciple of Life", 
+                    "description": "Your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level." 
+                },
+                { 
+                    "name": "Life Domain Spells", 
+                    "description": "You gain access to the spells Bless and Cure Wounds." 
+                }
+            ]
         },
         {
             "name": "Fighter",
@@ -751,7 +778,13 @@
                     "value": 8
                 }
             ],
-            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+            "primaryAbility": "0caab33e-f424-4a44-94cd-0c6951e5bdfe",
+            "additionalProperties": [
+                { 
+                    "name": "Second Wind", 
+                    "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
+                }
+            ]
         },
         {
             "name": "Rogue",
@@ -856,7 +889,17 @@
                     "value": 12
                 }
             ],
-            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+            "primaryAbility": "fd107c7f-4536-4b36-bf43-e49d92a3c4c2",
+            "additionalProperties": [
+                { 
+                    "name": "Sneak Attack", 
+                    "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. \nYou don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll." 
+                },
+                { 
+                    "name": "Thieves' Cant", 
+                    "description": "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly. \nIn addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run." 
+                }
+            ]
         },
         {
             "name": "Wizard",
@@ -970,7 +1013,17 @@
                     "value": 10
                 }
             ],
-            "otherFeatures": [{ "name": "string", "id": "uuid", "description": "string" }]
+            "primaryAbility": "44fbcb3c-d548-4a3c-aa85-4c55e05aabed",
+            "additionalProperties": [
+                { 
+                    "name": "Spellbook", 
+                    "description": " You have a spellbook containing six 1st-level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind." 
+                },
+                { 
+                    "name": "Arcane Recovery", 
+                    "description": " You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher." 
+                }
+            ]
         }
     ],
     "cantrips": [

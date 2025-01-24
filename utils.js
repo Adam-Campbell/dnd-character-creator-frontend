@@ -85,6 +85,7 @@ function denormaliseClass(cls, data) {
             value: abilityValuePair.value
         }
     });
+    cls.primaryAbility = data.abilities.find(a => a.id === cls.primaryAbility);
     // Proficiencies can just be replaced as-is
     cls.proficiencies.armor = cls.proficiencies.armor.map(a => data.items.find(i => i.id === a));
     cls.proficiencies.weapons = cls.proficiencies.weapons.map(w => data.items.find(i => i.id === w));

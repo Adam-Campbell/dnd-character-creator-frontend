@@ -167,13 +167,33 @@ document.addEventListener("alpine:init", () => {
             return points;
         },
         /**
-         * Resets the ability points to the default values for the chosen class.
+         * Resets/unsets the ability points.
          */
         resetAbilityPoints() {
+            this.character.abilityPoints = this.character.abilityPoints.map(a => {
+                return {
+                    ...a,
+                    value: "--"
+                }
+            });
+        },
+        /**
+         * Sets the ability points to recommended values for the currently chosen
+         * class. 
+         */
+        setAbilityPointsToChosenClassDefaults() {
             const classDefaults = this.chosenClass.abilities;
             for (let i = 0; i < this.character.abilityPoints.length; i++) {
                 this.character.abilityPoints[i].value = classDefaults[i].value;
             }
+        },
+        /**
+         * Any cleanup that needs to happen when the race is changed goes here.
+         * (example: resetting class skill proficiency choices, as the race choice
+         * can affect how many skills the class can choose).
+         */
+        resetStateOnRaceChange() {
+            this.character.classSkillChoices = [];
         },
         /**
          * Whenever a different class is chosen, reset the relevant parts of state, either
