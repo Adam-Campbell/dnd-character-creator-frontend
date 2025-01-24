@@ -275,7 +275,28 @@
                 <template data-if="currentPage === 'spells'">
                     <div>
                         <div>
-                            <h3>Chosen cantrips</h3>
+                            <h3 data-text="`${character.classCantripChoices.length} of ${chosenClass.spellcasting.cantrips.choose} cantrips chosen`"></h3>
+                            <template data-if="character.classCantripChoices.length > 0">
+                                <ul>
+                                    <template data-for="cantripId in character.classCantripChoices">
+                                        <li>
+                                            <span data-text="getCantripData(cantripId).name"></span>
+                                            <button data-on:click="removeCantrip(cantripId)">Remove</button>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </template>
+                            <h3 data-text="`${character.classSpellChoices.length} of ${chosenClass.spellcasting.spells.choose} spells chosen`"></h3>
+                            <template data-if="character.classSpellChoices.length > 0">
+                                <ul>
+                                    <template data-for="spellId in character.classSpellChoices">
+                                        <li>
+                                            <span data-text="getSpellData(spellId).name"></span>
+                                            <button data-on:click="removeSpell(spellId)">Remove</button>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </template>
                         </div>
                         <h3>Cantrips</h3>
                         <ul>
@@ -303,7 +324,11 @@
                                         <button data-on:click="() => removeCantrip(cantrip.id)">Remove Cantrip</button>
                                     </template>
                                     <template data-if="!character.classCantripChoices.includes(cantrip.id)">
-                                        <button data-on:click="() => addCantrip(cantrip.id)">Add Cantrip</button>
+                                        <button 
+                                            data-bind:disabled="character.classCantripChoices.length >= chosenClass.spellcasting.cantrips.choose" 
+                                            data-on:click="() => addCantrip(cantrip.id)">
+                                            Add Cantrip
+                                        </button>
                                     </template>
                                 </li>
                             </template>
@@ -334,7 +359,11 @@
                                         <button data-on:click="() => removeSpell(spell.id)">Remove Spell</button>
                                     </template>
                                     <template data-if="!character.classSpellChoices.includes(spell.id)">
-                                        <button data-on:click="() => addSpell(spell.id)">Add Spell</button>
+                                        <button 
+                                            data-bind:disabled="character.classSpellChoices.length >= chosenClass.spellcasting.spells.choose" 
+                                            data-on:click="() => addSpell(spell.id)">
+                                            Add Spell
+                                        </button>
                                     </template>
                                 </li>
                             </template>

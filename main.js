@@ -184,16 +184,52 @@ document.addEventListener("alpine:init", () => {
             console.log(e.target.value);
         },
         addCantrip(cantripId) {
+            // If the cantrip is already in the list, do nothing.
+            if (this.character.classCantripChoices.includes(cantripId)) {
+                console.error("Attempted to add a cantrip that is already in the list.");
+                return;
+            }
+            // If the list is already at the maximum length, do nothing.
+            if (this.character.classCantripChoices.length >= this.chosenClass.spellcasting.cantrips.choose) {
+                console.error("Attempted to add more cantrips than allowed.");
+                return;
+            }
             this.character.classCantripChoices.push(cantripId);
         },
         removeCantrip(cantripId) {
+            // If the cantrip is not in the list, do nothing.
+            if (!this.character.classCantripChoices.includes(cantripId)) {
+                console.error("Attempted to remove a cantrip that is not in the list.");
+                return;
+            }
             this.character.classCantripChoices = this.character.classCantripChoices.filter(c => c !== cantripId);
         },
+        getCantripData(cantripId) {
+            return this.staticData.cantrips.find(c => c.id === cantripId);
+        },
         addSpell(spellId) {
+            // If the spell is already in the list, do nothing.
+            if (this.character.classSpellChoices.includes(spellId)) {
+                console.error("Attempted to add a spell that is already in the list.");
+                return;
+            }
+            // If the list is already at the maximum length, do nothing.
+            if (this.character.classSpellChoices.length >= this.chosenClass.spellcasting.spells.choose) {
+                console.error("Attempted to add more spells than allowed.");
+                return;
+            }
             this.character.classSpellChoices.push(spellId);
         },
         removeSpell(spellId) {
+            // If the spell is not in the list, do nothing.
+            if (!this.character.classSpellChoices.includes(spellId)) {
+                console.error("Attempted to remove a cantrip that is not in the list.");
+                return;
+            }
             this.character.classSpellChoices = this.character.classSpellChoices.filter(s => s !== spellId);
+        },
+        getSpellData(spellId) {
+            return this.staticData.spells.find(s => s.id === spellId);
         },
         /**
          * Truncates the given text if it is longer than maxLength, adding '...' to the end.
